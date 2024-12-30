@@ -1,0 +1,32 @@
+[
+  {
+    "role": "Full Stack Developer",
+    "organisation": "KeelWorks Foundation",
+    "startDate": "Mar, 2024",
+    "endDate": "Sept, 2024",
+    "experiences": [
+      "Worked on portfolio app.",
+      "Implemented state management."
+    ],
+    "imageSrc": "history/keelworks.png"
+  },
+  {
+    "role": "Web Developer Intern",
+    "organisation": "Zaio Institute of Technology",
+    "startDate": "Jun, 2022",
+    "endDate": "Jul, 2023",
+    "experiences": ["Created APIs.", "Implemented authentication."],
+    "imageSrc": "history/zaio.png"
+  },
+  {
+    "role": "Department Coordinator",
+    "organisation": "Woolworths",
+    "startDate": "Jun, 2016",
+    "endDate": "May, 2021",
+    "experiences": [
+      "Managed projects successfully.",
+      "Fostered collaboration."
+    ],
+    "imageSrc": "history/woolworths.png"
+  }
+]
