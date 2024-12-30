@@ -36,7 +36,7 @@ export const About = () => {
           <li className={styles.aboutItem}>
             <img src={getImageUrl("about/cursorIcon.png")} alt="UI icon" />
             <div className={styles.aboutItemText}>
-              <h3>WeThinkCode_ student</h3>
+              <h3>WeThinkCode_ Student</h3>
               <p>
                 I'm a problem-solver, always learning and adapting to tech
                 challenges.
