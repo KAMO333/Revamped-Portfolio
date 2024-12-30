@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Friends Store",
+    "imageSrc": "projects/friends.png",
+    "description": "The app lets users record, save, update, or delete (CRUD) friends' info in a database and display it on the UI.",
+    "skills": ["React", "Chakra UI", "Python", "Flask", "Sqlite"],
+    "demo": "https://friends-store-zr42.onrender.com/",
+    "source": "https://github.com/KAMO333/React-Python-Full-Stack-Web-App"
+  },
+  {
+    "title": "Tic Tac Toe",
+    "imageSrc": "projects/tictactoe.png",
+    "description": "Two players take turns marking spaces on a 3x3 grid to get three in a row, either horizontally, vertically, or diagonally.",
+    "skills": ["React", "Styled-Components", "Context API"],
+    "demo": "https://tictactoe-by-kamo.netlify.app/",
+    "source": "https://github.com/KAMO333/tic-tac-toe-game"
+  },
+  {
+    "title": "Photo Gallery",
+    "imageSrc": "projects/photogallery.png",
+    "description": "The app lets users upload and view images, with a modal for better viewing.",
+    "skills": ["React", "Firebase"],
+    "demo": "https://photogallerywebapp.netlify.app/",
+    "source": "https://github.com/KAMO333/photo-gallery"
+  },
+  {
+    "title": "Google Keep",
+    "imageSrc": "projects/google-keeps-clone.png",
+    "description": "Allows users to create, organize, and store notes",
+    "skills": ["HTML", "CSS", "JavaScript", "Firebase"],
+    "demo": "https://google-keep-with-dom-and-firebase.netlify.app",
+    "source": "https://github.com/KAMO333/Google-Keep-With-DOM-Firebase"
+  },
+  {
+    "title": "Tech Store",
+    "imageSrc": "projects/product-filter.png",
+    "description": "The app lets users filter products by category and add them to their carts.",
+    "skills": ["HTML", "Tailwind CSS", "JavaScript"],
+    "demo": "https://productfilteringapp.netlify.app/",
+    "source": "https://github.com/KAMO333/product-filtering-app"
+  },
+  {
+    "title": "myTunes",
+    "imageSrc": "projects/mytunes.png",
+    "description": "Responsive landing page, inspired by the iTunes website's layout and content.",
+    "skills": ["HTML5", "CSS3", "jQuery"],
+    "demo": "https://mytunewebsite.netlify.app/",
+    "source": "https://github.com/KAMO333/myTunes-"
+  }
+]
