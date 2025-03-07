@@ -6,7 +6,7 @@
     "skills": [
       "JavaScript",
       "TailwindCSS",
-      "React",
+      "React.js",
       "Node.js",
       "Express.js",
       "MongoDB",
@@ -24,7 +24,7 @@
     "skills": [
       "JavaScript",
       "TailwindCSS",
-      "React",
+      "React.js",
       "GraphQL",
       "Node.js",
       "Express.js",
@@ -38,7 +38,7 @@
     "imageSrc": "projects/friends.png",
     "description": "The app lets users CRUD friends' info in a database and display it on the UI.",
     "skills": [
-      "React",
+      "React.js",
       "Chakra UI",
       "Python",
       "Flask",
@@ -52,7 +52,7 @@
     "title": "Tic Tac Toe",
     "imageSrc": "projects/tictactoe.png",
     "description": "Two players take turns marking spaces on a 3x3 grid to get three in a row, horizontally, vertically, or diagonally.",
-    "skills": ["JavaScript", "React", "Styled-Components", "Context API"],
+    "skills": ["JavaScript", "React.js", "styled-components", "Context API"],
     "demo": "https://tictactoe-by-kamo.netlify.app/",
     "source": "https://github.com/KAMO333/tic-tac-toe-game"
   },
@@ -60,7 +60,7 @@
     "title": "Photo Gallery",
     "imageSrc": "projects/photogallery.png",
     "description": "The app lets users upload, view, and zoom in on images in a modal.",
-    "skills": ["JavaScript", "React", "Firebase", "RESTful API"],
+    "skills": ["JavaScript", "React.js", "Firebase", "RESTful API"],
     "demo": "https://photogallerywebapp.netlify.app/",
     "source": "https://github.com/KAMO333/photo-gallery"
   },
