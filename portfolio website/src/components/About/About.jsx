@@ -16,20 +16,22 @@ export const About = () => {
           <li className={styles.aboutItem}>
             <img src={getImageUrl("about/cursorIcon.png")} alt="Cursor icon" />
             <div className={styles.aboutItemText}>
-              <h3>Frontend Developer</h3>
+              <h3>Frontend Development</h3>
               <p>
-                I'm a frontend developer with experience in building responsive
-                and optimized sites.
+                I have Frontend experience working with HTML, CSS, JavaScript,
+                React.js, Redux, and Tailwind CSS, building responsive and
+                optimized websites. 🎨
               </p>
             </div>
           </li>
           <li className={styles.aboutItem}>
             <img src={getImageUrl("about/serverIcon.png")} alt="Server icon" />
             <div className={styles.aboutItemText}>
-              <h3>Backend Developer</h3>
+              <h3>Backend Development</h3>
               <p>
-                I have experience developing fast and optimised back-end systems
-                and APIs.
+                I have Backend experience working with Node.js, Express,
+                MongoDB, Firebase and RESTful APIs, building scalable and
+                efficient server-side applications. ⚡🛠️
               </p>
             </div>
           </li>
@@ -38,8 +40,10 @@ export const About = () => {
             <div className={styles.aboutItemText}>
               <h3>WeThinkCode_ Student</h3>
               <p>
-                I'm a problem-solver, always learning and adapting to tech
-                challenges.
+                I’m a WeThinkCode_ student currently sharpening my skills in
+                Python, Java, SQL, Data Structures & Algorithms, OOP, Web
+                Development, Agile Methodology, Problem-Solving, and System
+                Design. 💡🚀
               </p>
             </div>
           </li>
