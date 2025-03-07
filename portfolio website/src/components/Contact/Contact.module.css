@@ -5,11 +5,12 @@
   margin-top: 120px;
   background-color: var(--color-secondary);
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   padding: 58px 10%;
-  gap: 10px;
+  gap: 20px;
 }
 
 .text h2 {
@@ -26,16 +27,16 @@
 
 .links {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  justify-content: center;
   list-style: none;
-  gap: 26px;
+  gap: 30px;
+  margin-left: -11%;
 }
 
 .link {
   display: flex;
   align-items: center;
-  gap: 25px;
 }
 
 .link a {
@@ -44,11 +45,20 @@
   font-size: 30px;
   font-weight: 400;
   letter-spacing: 1.5px;
+  display: flex;
+  align-items: center;
+}
+
+.link img {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column;
+    align-items: center;
     gap: 23px;
   }
 
@@ -59,6 +69,13 @@
   }
 
   .links {
+    flex-direction: row;
+    gap: 15px;
     align-items: center;
+    margin-left: 0;
+  }
+
+  .link {
+    gap: 15px;
   }
 }
