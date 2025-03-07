@@ -1,49 +1,82 @@
 [
   {
+    "title": "E-Commerce",
+    "imageSrc": "projects/e-commerce.png",
+    "description": "Full-stack platform with secure authentication, payments, and discounts.",
+    "skills": [
+      "JavaScript",
+      "TailwindCSS",
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "RESTful API",
+      "Redis",
+      "Stripe"
+    ],
+    "demo": "https://mern-e-commerce-e8hp.onrender.com/",
+    "source": "https://github.com/KAMO333/mern-e-commerce"
+  },
+  {
+    "title": "Expense Tracker",
+    "imageSrc": "projects/expense tracker.png",
+    "description": "Full-stack platform with secure authentication and CRUD operations for transactions.",
+    "skills": [
+      "JavaScript",
+      "TailwindCSS",
+      "React",
+      "GraphQL",
+      "Node.js",
+      "Express.js",
+      "MongoDB"
+    ],
+    "demo": "https://graphql-expenses-app.onrender.com",
+    "source": "https://github.com/KAMO333/GraphQL-expenses-app"
+  },
+  {
     "title": "Friends Store",
     "imageSrc": "projects/friends.png",
-    "description": "The app lets users record, save, update, or delete (CRUD) friends' info in a database and display it on the UI.",
-    "skills": ["React", "Chakra UI", "Python", "Flask", "Sqlite"],
+    "description": "The app lets users CRUD friends' info in a database and display it on the UI.",
+    "skills": [
+      "React",
+      "Chakra UI",
+      "Python",
+      "Flask",
+      "Sqlite",
+      "RESTful API"
+    ],
     "demo": "https://friends-store-zr42.onrender.com/",
     "source": "https://github.com/KAMO333/React-Python-Full-Stack-Web-App"
   },
   {
     "title": "Tic Tac Toe",
     "imageSrc": "projects/tictactoe.png",
-    "description": "Two players take turns marking spaces on a 3x3 grid to get three in a row, either horizontally, vertically, or diagonally.",
-    "skills": ["React", "Styled-Components", "Context API"],
+    "description": "Two players take turns marking spaces on a 3x3 grid to get three in a row, horizontally, vertically, or diagonally.",
+    "skills": ["JavaScript", "React", "Styled-Components", "Context API"],
     "demo": "https://tictactoe-by-kamo.netlify.app/",
     "source": "https://github.com/KAMO333/tic-tac-toe-game"
   },
   {
     "title": "Photo Gallery",
     "imageSrc": "projects/photogallery.png",
-    "description": "The app lets users upload and view images, with a modal for better viewing.",
-    "skills": ["React", "Firebase"],
+    "description": "The app lets users upload, view, and zoom in on images in a modal.",
+    "skills": ["JavaScript", "React", "Firebase", "RESTful API"],
     "demo": "https://photogallerywebapp.netlify.app/",
     "source": "https://github.com/KAMO333/photo-gallery"
   },
   {
-    "title": "Google Keep",
-    "imageSrc": "projects/google-keeps-clone.png",
-    "description": "Allows users to create, organize, and store notes.",
-    "skills": ["HTML", "CSS", "JavaScript", "Firebase"],
-    "demo": "https://google-keep-with-dom-and-firebase.netlify.app",
-    "source": "https://github.com/KAMO333/Google-Keep-With-DOM-Firebase"
-  },
-  {
     "title": "Tech Store",
     "imageSrc": "projects/product-filter.png",
-    "description": "The app lets users filter products by category and add them to their carts.",
-    "skills": ["HTML", "Tailwind CSS", "JavaScript"],
+    "description": "The app lets users filter products by category and add them to their cart.",
+    "skills": ["HTML", "CSS", "JavaScript"],
     "demo": "https://productfilteringapp.netlify.app/",
     "source": "https://github.com/KAMO333/product-filtering-app"
   },
   {
     "title": "myTunes",
     "imageSrc": "projects/mytunes.png",
-    "description": "Responsive landing page, inspired by the iTunes website's layout and content.",
-    "skills": ["HTML5", "CSS3", "jQuery"],
+    "description": "Responsive landing page inspired by the iTunes website layout and content.",
+    "skills": ["HTML", "CSS", "JavaScript"],
     "demo": "https://mytunewebsite.netlify.app/",
     "source": "https://github.com/KAMO333/myTunes-"
   }

@@ -11,11 +11,14 @@
     "imageSrc": "history/keelworks.png"
   },
   {
-    "role": "Web Developer Intern",
+    "role": "Full Stack Developer Intern",
     "organisation": "Zaio Institute of Technology",
     "startDate": "Jun, 2022",
     "endDate": "Jul, 2023",
-    "experiences": ["Created APIs.", "Implemented authentication."],
+    "experiences": [
+      "Created RESTful APIs.",
+      "Implemented authentication systems."
+    ],
     "imageSrc": "history/zaio.png"
   },
   {
