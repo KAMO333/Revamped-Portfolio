@@ -8,8 +8,8 @@ export const Hero = () => {
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm Kamogelo</h1>
         <p className={styles.description}>
-          I'm a full-stack developer with 3 years of experience using React and
-          NodeJS. Reach out if you'd like to learn more!
+          I'm a full-stack developer with 3 years of experience in React.js and
+          Node.js. Always open to connecting—feel free to reach out! 🚀✨
         </p>
         <a href="mailto:kamosworkemail@gmail.com" className={styles.contactBtn}>
           Contact Me
