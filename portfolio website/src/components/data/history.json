@@ -5,19 +5,21 @@
     "startDate": "Mar, 2024",
     "endDate": "Sept, 2024",
     "experiences": [
-      "Worked on portfolio app.",
-      "Implemented state management."
+      "React, JavaScript",
+      "Node.js, Express, MongoDB",
+      "Git, REST API's"
     ],
     "imageSrc": "history/keelworks.png"
   },
   {
-    "role": "Full Stack Developer Intern",
+    "role": "Full Stack Web Developer",
     "organisation": "Zaio Institute of Technology",
     "startDate": "Jun, 2022",
     "endDate": "Jul, 2023",
     "experiences": [
-      "Created RESTful APIs.",
-      "Implemented authentication systems."
+      "React, JavaScript",
+      "Node.js, Express, MongoDB",
+      "Git, REST API's"
     ],
     "imageSrc": "history/zaio.png"
   },
@@ -26,10 +28,7 @@
     "organisation": "Woolworths",
     "startDate": "Jun, 2016",
     "endDate": "May, 2021",
-    "experiences": [
-      "Managed projects successfully.",
-      "Fostered collaboration."
-    ],
+    "experiences": ["Sales", "Customer Service"],
     "imageSrc": "history/woolworths.png"
   }
 ]
