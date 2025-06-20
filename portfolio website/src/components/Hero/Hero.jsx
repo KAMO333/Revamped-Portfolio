@@ -12,11 +12,9 @@ export const Hero = () => {
           code.
         </p>
         <p className={styles.description}>
-          I’m a full-stack developer with a passion for building dynamic web
-          applications using React, JavaScript, Node.js, Express, and MongoDB.
-          Currently, I’m deepening my skills in software architecture with
-          Python, Java, unit testing, brownfield projects, and mobile
-          development at Wethinkcode_. 🚀✨
+          I'm a full-stack developer skilled in React, JavaScript, Node.js,
+          Express, and MongoDB, currently expanding into software architecture,
+          Python, Java, testing, and mobile dev at Wethinkcode_. 🚀
         </p>
         <a href="mailto:kamosworkemail@gmail.com" className={styles.contactBtn}>
           Contact Me
