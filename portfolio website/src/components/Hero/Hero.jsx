@@ -8,10 +8,11 @@ export const Hero = () => {
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm Kamogelo</h1>
         <p className={styles.description}>
-          I’m a full-stack developer passionate about building dynamic apps with
-          React, JavaScript, Node.js, Express, and MongoDB. Currently sharpening
-          my skills in software architecture, Python, Java, testing, and mobile
-          dev at Wethinkcode_.
+           I'm
+
+a full stack dev specializing in JavaScript, React, Node.js, Express.js, Python, and MongoDB, implementing REST APIs, and Unit Testing (TDD), current interest include: Java, TypeScript,
+
+SQL, Docker, AWS, and CI/CD. I'm a WeThinkCode graduate 
         </p>
         <a href="mailto:kamosworkemail@gmail.com" className={styles.contactBtn}>
           Contact Me

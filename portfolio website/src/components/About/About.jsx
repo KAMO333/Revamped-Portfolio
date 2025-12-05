@@ -18,8 +18,8 @@ export const About = () => {
             <div className={styles.aboutItemText}>
               <h3>Frontend Development</h3>
               <p>
-                I have Frontend experience working with HTML, CSS, JavaScript,
-                React.js, Redux, and Tailwind CSS, building responsive and
+                I have Frontend experience working with HTML, CSS, Tailwind CSS, JavaScript,
+                React.js, and Redux, building responsive and
                 optimized websites. 🎨
               </p>
             </div>
@@ -29,7 +29,7 @@ export const About = () => {
             <div className={styles.aboutItemText}>
               <h3>Backend Development</h3>
               <p>
-                I have Backend experience working with Node.js, Express,
+                I have Backend experience working with Node.js, Express.js,
                 MongoDB, Firebase and RESTful APIs, building scalable and
                 efficient server-side applications. ⚡🛠️
               </p>
@@ -38,12 +38,9 @@ export const About = () => {
           <li className={styles.aboutItem}>
             <img src={getImageUrl("about/cursorIcon.png")} alt="UI icon" />
             <div className={styles.aboutItemText}>
-              <h3>WeThinkCode_ Student</h3>
+              <h3>WeThinkCode_ Graduate</h3>
               <p>
-                I’m a WeThinkCode_ student currently sharpening my skills in
-                Python, Java, SQL, Data Structures & Algorithms, OOP, Web
-                Development, Agile Methodology, Problem-Solving, and System
-                Design. 💡🚀
+               I am a WeThinkCode_ graduate who learned problem-solving with Python, Java, and JavaScript, specializing in OOP, REST APIs, Unit Testing, ORM, System Design, Agile Methodology, Git, and CI/CD. 💡🚀
               </p>
             </div>
           </li>

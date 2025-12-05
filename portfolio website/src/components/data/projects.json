@@ -4,8 +4,8 @@
     "imageSrc": "projects/e-commerce.png",
     "description": "Full-stack platform with secure authentication, payments, and discounts.",
     "skills": [
-      "JavaScript",
       "TailwindCSS",
+      "JavaScript",
       "React.js",
       "Node.js",
       "Express.js",
@@ -22,8 +22,8 @@
     "imageSrc": "projects/expense tracker.png",
     "description": "Full-stack platform with secure authentication and CRUD operations for transactions.",
     "skills": [
-      "JavaScript",
       "TailwindCSS",
+      "JavaScript",
       "React.js",
       "GraphQL",
       "Node.js",
@@ -38,6 +38,7 @@
     "imageSrc": "projects/friends.png",
     "description": "The app lets users CRUD friends' info in a database and display it on the UI.",
     "skills": [
+      "JavaScript",
       "React.js",
       "Chakra UI",
       "Python",
