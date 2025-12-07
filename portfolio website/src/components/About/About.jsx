@@ -29,7 +29,7 @@ export const About = () => {
             <div className={styles.aboutItemText}>
               <h3>Backend Development</h3>
               <p>
-                I have Backend experience working with Node.js, Express.js, Python
+                I have Backend experience working with Node.js, Express.js, Python,
                 MongoDB, Firebase and RESTful APIs, building scalable and
                 efficient server-side applications. ⚡🛠️
               </p>
