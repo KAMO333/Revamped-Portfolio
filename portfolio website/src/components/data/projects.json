@@ -2,7 +2,7 @@
   {
     "title": "E-Commerce",
     "imageSrc": "projects/e-commerce.png",
-    "description": "Full-stack platform with secure authentication, payments, and discounts.",
+    "description": "Full stack e-commerce web application.",
     "skills": [
       "TailwindCSS",
       "JavaScript",
@@ -20,7 +20,7 @@
   {
     "title": "Expense Tracker",
     "imageSrc": "projects/expense tracker.png",
-    "description": "Full-stack platform with secure authentication and CRUD operations for transactions.",
+    "description": "Full stack expense tracker web application.",
     "skills": [
       "TailwindCSS",
       "JavaScript",
@@ -36,7 +36,7 @@
   {
     "title": "Friends Store",
     "imageSrc": "projects/friends.png",
-    "description": "The app lets users CRUD friends' info in a database and display it on the UI.",
+    "description": "Web application to store friends information.",
     "skills": [
       "JavaScript",
       "React.js",
@@ -52,7 +52,7 @@
   {
     "title": "Tic Tac Toe",
     "imageSrc": "projects/tictactoe.png",
-    "description": "Two players take turns marking spaces on a 3x3 grid to get three in a row, horizontally, vertically, or diagonally.",
+    "description": "A classic Tic Tac Toe game.",
     "skills": ["JavaScript", "React.js", "styled-components", "Context API"],
     "demo": "https://tictactoe-by-kamo.netlify.app/",
     "source": "https://github.com/KAMO333/tic-tac-toe-game"
@@ -60,7 +60,7 @@
   {
     "title": "Photo Gallery",
     "imageSrc": "projects/photogallery.png",
-    "description": "The app lets users upload, view, and zoom in on images in a modal.",
+    "description": "Photo gallery web application.",
     "skills": ["JavaScript", "React.js", "Firebase", "RESTful API"],
     "demo": "https://photogallerywebapp.netlify.app/",
     "source": "https://github.com/KAMO333/photo-gallery"
@@ -68,7 +68,7 @@
   {
     "title": "Tech Store",
     "imageSrc": "projects/product-filter.png",
-    "description": "The app lets users filter products by category and add them to their cart.",
+    "description": "E-commerce web application",
     "skills": ["HTML", "CSS", "JavaScript"],
     "demo": "https://productfilteringapp.netlify.app/",
     "source": "https://github.com/KAMO333/product-filtering-app"
@@ -76,7 +76,7 @@
   {
     "title": "myTunes",
     "imageSrc": "projects/mytunes.png",
-    "description": "Responsive landing page inspired by the iTunes website layout and content.",
+    "description": "iTunes like Web Application",
     "skills": ["HTML", "CSS", "JavaScript"],
     "demo": "https://mytunewebsite.netlify.app/",
     "source": "https://github.com/KAMO333/myTunes-"

@@ -23,16 +23,16 @@
     "title": "Express.js",
     "imageSrc": "skills/express.png"
   },
-  {
-    "title": "MongoDB",
-    "imageSrc": "skills/mongodb.png"
-  },
-  {
+   {
     "title": "Python",
     "imageSrc": "skills/python.png"
   },
   {
     "title": "Git",
     "imageSrc": "skills/Git.png"
+  },
+  {
+    "title": "MongoDB",
+    "imageSrc": "skills/mongodb.png"
   }
 ]

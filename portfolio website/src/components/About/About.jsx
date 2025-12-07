@@ -29,7 +29,7 @@ export const About = () => {
             <div className={styles.aboutItemText}>
               <h3>Backend Development</h3>
               <p>
-                I have Backend experience working with Node.js, Express.js,
+                I have Backend experience working with Node.js, Express.js, Python
                 MongoDB, Firebase and RESTful APIs, building scalable and
                 efficient server-side applications. ⚡🛠️
               </p>
@@ -40,7 +40,7 @@ export const About = () => {
             <div className={styles.aboutItemText}>
               <h3>WeThinkCode_ Graduate</h3>
               <p>
-               I am a WeThinkCode_ graduate who learned problem-solving with Python, Java, and JavaScript, specializing in OOP, REST APIs, Unit Testing, ORM, System Design, Agile Methodology, Git, and CI/CD. 💡🚀
+               I am a WeThinkCode_ graduate who learned problem-solving with Python, Java, and JavaScript, specializing in OOP, REST APIs, Unit Testing, ORM, System Design, Agile Methodology, Git, Docker and CI/CD. 💡🚀
               </p>
             </div>
           </li>
