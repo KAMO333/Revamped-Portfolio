@@ -29,7 +29,7 @@ export const ProjectCard = ({
           Demo
         </a>
         <a href={source} className={styles.link}>
-          Source
+          Code
         </a>
       </div>
     </div>
