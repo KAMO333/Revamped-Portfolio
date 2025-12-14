@@ -16,31 +16,25 @@ export const About = () => {
           <li className={styles.aboutItem}>
             <img src={getImageUrl("about/cursorIcon.png")} alt="Cursor icon" />
             <div className={styles.aboutItemText}>
-              <h3>Frontend Development</h3>
+              <h3>Frontend Development 🎨</h3>
               <p>
-                I have Frontend experience working with HTML, CSS, Tailwind CSS, JavaScript,
-                React.js, and Redux, building responsive and
-                optimized websites. 🎨
-              </p>
+I specialize in building responsive, accessible, and optimized user interfaces using React, Redux, JavaScript, HTML, CSS, and Tailwind CSS. I focus on the user experience and interface performance.              </p>
             </div>
           </li>
           <li className={styles.aboutItem}>
             <img src={getImageUrl("about/serverIcon.png")} alt="Server icon" />
             <div className={styles.aboutItemText}>
-              <h3>Backend Development</h3>
+              <h3>Backend & Data Management ⚡ </h3>
               <p>
-                I have Backend experience working with Node.js, Express.js, Python,
-                MongoDB, Firebase and RESTful APIs, building scalable and
-                efficient server-side applications. ⚡🛠️
-              </p>
+I focus on scalable and efficient server-side applications within the MERN stack (Node.js, Express.js, MongoDB). I design and implement RESTful APIs and leverage core languages like Python and Java. My data experience includes MongoDB, SQL and Firebase for diverse data persistence needs.              </p>
             </div>
           </li>
           <li className={styles.aboutItem}>
             <img src={getImageUrl("about/cursorIcon.png")} alt="UI icon" />
             <div className={styles.aboutItemText}>
-              <h3>WeThinkCode_ Graduate</h3>
+              <h3>WeThinkCode_ Graduate 💡</h3>
               <p>
-               I am a WeThinkCode_ graduate who learned problem-solving with Python, Java, and JavaScript, specializing in OOP, REST APIs, Unit Testing, ORM, System Design, Agile Methodology, Git, Docker and CI/CD. 💡🚀
+                A graduate of WeThinkCode_, I possess a strong foundation in OOP (Python/Java/JavaScript), System Design, Distributed Systems, and Agile Methodology. My quality engineering focus includes Unit Testing, ORM, Git/version control, and practical experience with Docker, and CI/CD for robust deployment pipelines.
               </p>
             </div>
           </li>

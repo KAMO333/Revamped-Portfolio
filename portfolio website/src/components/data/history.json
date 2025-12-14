@@ -17,7 +17,7 @@
     "startDate": "Jun, 2022",
     "endDate": "Jul, 2023",
     "experiences": [
-      "JavaScript, React",
+      "JavaScript, React, Redux",
       "Node.js, Express.js, MongoDB",
       "Git, REST API's"
     ],
@@ -28,7 +28,7 @@
     "organisation": "Woolworths",
     "startDate": "Jun, 2016",
     "endDate": "May, 2021",
-    "experiences": ["Sales", "Customer Service"],
+    "experiences": ["Project Coordination", "Team Leadership", "Cross-Functional Collaboration"],
     "imageSrc": "history/woolworths.png"
   }
 ]
