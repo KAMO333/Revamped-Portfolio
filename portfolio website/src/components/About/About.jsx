@@ -16,25 +16,27 @@ export const About = () => {
           <li className={styles.aboutItem}>
             <img src={getImageUrl("about/cursorIcon.png")} alt="Cursor icon" />
             <div className={styles.aboutItemText}>
-              <h3>Frontend Development 🎨</h3>
+              <h3>Frontend Engineering 🎨</h3>
               <p>
-I specialize in building responsive, accessible, and optimized user interfaces using React, Redux, JavaScript, HTML, CSS, and Tailwind CSS. I focus on the user experience and interface performance.              </p>
+                I architect responsive, high-performance user interfaces using React and JavaScript. By leveraging Tailwind CSS, HTML, and CSS, I deliver accessible, SEO-optimized experiences with a focus on efficient state management, component modularity, and frontend performance.
+              </p>
             </div>
           </li>
           <li className={styles.aboutItem}>
             <img src={getImageUrl("about/serverIcon.png")} alt="Server icon" />
             <div className={styles.aboutItemText}>
-              <h3>Backend & Data Management ⚡ </h3>
+              <h3>Backend & Data Engineering ⚡</h3>
               <p>
-I focus on scalable and efficient server-side applications within the MERN stack (Node.js, Express.js, MongoDB). I design and implement RESTful APIs and leverage core languages like Python and Java. My data experience includes MongoDB, SQL and Firebase for diverse data persistence needs.              </p>
+                I architect scalable, secure server-side applications specializing in Node.js, Express, Python, and Flask. I design and implement robust RESTful APIs with a focus on high-concurrency and performance. My data expertise includes MongoDB, Redis, and Firebase, allowing me to implement the right persistence strategy for diverse application needs.
+              </p>
             </div>
           </li>
           <li className={styles.aboutItem}>
             <img src={getImageUrl("about/cursorIcon.png")} alt="UI icon" />
             <div className={styles.aboutItemText}>
-              <h3>WeThinkCode_ Graduate 💡</h3>
+              <h3>Systems & Quality Engineering 💡</h3>
               <p>
-                A graduate of WeThinkCode_, I possess a strong foundation in OOP (Python/Java/JavaScript), System Design, Distributed Systems, and Agile Methodology. My quality engineering focus includes Unit Testing, ORM, Git/version control, and practical experience with Docker, and CI/CD for robust deployment pipelines.
+                As a WeThinkCode_ alumnus, I leverage a deep foundation in Object-Oriented Programming (Python & JavaScript) and System Design to build distributed, resilient architectures. My engineering standard is rooted in Quality Assurance, utilizing Test-Driven Development (TDD), Agile (Scrum) methodologies, and ORMs to ensure code reliability. I maintain high deployment standards through Git version control, Docker containerization, and automated CI/CD pipelines.
               </p>
             </div>
           </li>
