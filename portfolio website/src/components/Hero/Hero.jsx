@@ -6,13 +6,9 @@ export const Hero = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <h1 className={styles.title}>Hi, I'm Kamogelo</h1>
+        <h1 className={styles.title}>Hi, I'm Kamogelo.</h1>
         <p className={styles.description}>
-          I am a Full-Stack Engineer specializing in the MERN stack (React, Node.js, MongoDB), delivering solutions with REST APIs, Unit Testing (TDD), and scalable architecture.
-
-Tech Focus: JavaScript, Python, Java, SQL. Interests: TypeScript, Docker, AWS, CI/CD.
-
-A proud graduate of WeThinkCode_. 
+          Full stack developer specializing in building scalable web applications using JavaScript, React, Node.js, Python, and MongoDB.
         </p>
         <a href="mailto:kamosworkemail@gmail.com" className={styles.contactBtn}>
           Contact Me
