@@ -8,7 +8,7 @@ export const Hero = () => {
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm Kamogelo.</h1>
         <p className={styles.description}>
-          Full stack developer specializing in building scalable web applications using JavaScript, React, Node.js, Python, and MongoDB.
+          Full stack developer specializing in building scalable web applications using JavaScript, React, Node.js, Express.js, Python, and MongoDB.
         </p>
         <a href="mailto:kamosworkemail@gmail.com" className={styles.contactBtn}>
           Contact Me
