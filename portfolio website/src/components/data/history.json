@@ -5,9 +5,9 @@
     "startDate": "Mar, 2024",
     "endDate": "Sept, 2024",
     "experiences": [
-      "JavaScript, React",
       "Node.js, Express.js, MongoDB",
-      "Git, REST API's"
+      "JavaScript, React",
+      "REST APIs, Git"
     ],
     "imageSrc": "history/keelworks.png"
   },
@@ -17,9 +17,9 @@
     "startDate": "Jun, 2022",
     "endDate": "Jul, 2023",
     "experiences": [
-      "JavaScript, React, Redux",
       "Node.js, Express.js, MongoDB",
-      "Git, REST API's"
+      "JavaScript, React, Redux",
+      "REST APIs, Git"
     ],
     "imageSrc": "history/zaio.png"
   },
@@ -28,7 +28,11 @@
     "organisation": "Woolworths",
     "startDate": "Jun, 2016",
     "endDate": "May, 2021",
-    "experiences": ["Project Coordination", "Team Leadership", "Cross-Functional Collaboration"],
+    "experiences": [
+      "Stakeholder Management",
+      "Team Leadership",
+      "Cross-Functional Collaboration"
+    ],
     "imageSrc": "history/woolworths.png"
   }
 ]
