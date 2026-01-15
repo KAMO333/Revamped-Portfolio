@@ -36,7 +36,7 @@ export const About = () => {
             <div className={styles.aboutItemText}>
               <h3>Systems & Quality Engineering 💡</h3>
               <p>
-                As a WeThinkCode_ alumnus, I leverage a deep foundation in Object-Oriented Programming (Python & JavaScript) and System Design to build distributed, resilient architectures. My engineering standard is rooted in Quality Assurance, utilizing Test-Driven Development (TDD), Agile (Scrum) methodologies, and ORMs to ensure code reliability. I maintain high deployment standards through Git version control, Docker containerization, and automated CI/CD pipelines.
+                As a WeThinkCode_ alumnus, I leverage a deep foundation in Object-Oriented Programming (Python, Java & JavaScript) and System Design to build distributed, resilient architectures. My engineering standard is rooted in Quality Assurance, utilizing Test-Driven Development (TDD), Agile (Scrum) methodologies, and ORMs to ensure code reliability. I maintain high deployment standards through Git version control, Docker containerization, and automated CI/CD pipelines.
               </p>
             </div>
           </li>
