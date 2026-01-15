@@ -2,17 +2,17 @@
   {
     "title": "E-Commerce",
     "imageSrc": "projects/e-commerce.png",
-    "description": "Full stack e-commerce web application.",
+    "description": "Full stack MERN storefront with secure Stripe integration.",
     "skills": [
-      "TailwindCSS",
-      "JavaScript",
-      "React.js",
       "Node.js",
       "Express.js",
+      "React.js",
+      "JavaScript",
       "MongoDB",
-      "RESTful API",
       "Redis",
-      "Stripe"
+      "Stripe",
+      "RESTful API",
+      "TailwindCSS"
     ],
     "demo": "https://mern-e-commerce-e8hp.onrender.com/",
     "source": "https://github.com/KAMO333/mern-e-commerce"
@@ -20,15 +20,15 @@
   {
     "title": "Expense Tracker",
     "imageSrc": "projects/expense tracker.png",
-    "description": "Full stack expense tracker web application.",
+    "description": "Full stack dashboard utilizing GraphQL and Apollo Client.",
     "skills": [
-      "TailwindCSS",
-      "JavaScript",
-      "React.js",
-      "GraphQL",
       "Node.js",
       "Express.js",
-      "MongoDB"
+      "React.js",
+      "JavaScript",
+      "GraphQL",
+      "MongoDB",
+      "TailwindCSS"
     ],
     "demo": "https://graphql-expenses-app.onrender.com",
     "source": "https://github.com/KAMO333/GraphQL-expenses-app"
@@ -36,15 +36,15 @@
   {
     "title": "Friends Store",
     "imageSrc": "projects/friends.png",
-    "description": "Web application to store friends information.",
+    "description": "Full stack Python/Flask app with relational CRUD logic.",
     "skills": [
-      "JavaScript",
-      "React.js",
-      "Chakra UI",
       "Python",
       "Flask",
+      "React.js",
+      "JavaScript",
       "Sqlite",
-      "RESTful API"
+      "RESTful API",
+      "Chakra UI"
     ],
     "demo": "https://friends-store-zr42.onrender.com/",
     "source": "https://github.com/KAMO333/React-Python-Full-Stack-Web-App"
@@ -52,32 +52,50 @@
   {
     "title": "Tic Tac Toe",
     "imageSrc": "projects/tictactoe.png",
-    "description": "A classic Tic Tac Toe game.",
-    "skills": ["JavaScript", "React.js", "styled-components", "Context API"],
+    "description": "React game focusing on Context API state management.",
+    "skills": [
+      "React.js",
+      "JavaScript",
+      "Context API",
+      "styled-components"
+    ],
     "demo": "https://tictactoe-by-kamo.netlify.app/",
     "source": "https://github.com/KAMO333/tic-tac-toe-game"
   },
   {
     "title": "Photo Gallery",
     "imageSrc": "projects/photogallery.png",
-    "description": "Photo gallery web application.",
-    "skills": ["JavaScript", "React.js", "Firebase", "RESTful API"],
+    "description": "Cloud-based gallery with Firebase real-time persistence.",
+    "skills": [
+      "React.js",
+      "JavaScript",
+      "Firebase",
+      "RESTful API"
+    ],
     "demo": "https://photogallerywebapp.netlify.app/",
     "source": "https://github.com/KAMO333/photo-gallery"
   },
   {
     "title": "Tech Store",
     "imageSrc": "projects/product-filter.png",
-    "description": "E-commerce web application",
-    "skills": ["HTML", "CSS", "JavaScript"],
+    "description": "Responsive storefront focused on DOM filtering logic.",
+    "skills": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
     "demo": "https://productfilteringapp.netlify.app/",
     "source": "https://github.com/KAMO333/product-filtering-app"
   },
   {
     "title": "myTunes",
     "imageSrc": "projects/mytunes.png",
-    "description": "iTunes like Web Application",
-    "skills": ["HTML", "CSS", "JavaScript"],
+    "description": "Media landing page featuring modern CSS architecture.",
+    "skills": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
     "demo": "https://mytunewebsite.netlify.app/",
     "source": "https://github.com/KAMO333/myTunes-"
   }
