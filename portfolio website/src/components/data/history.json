@@ -5,9 +5,9 @@
     "startDate": "Mar, 2024",
     "endDate": "Sept, 2024",
     "experiences": [
-      "Node.js, Express.js, MongoDB",
-      "JavaScript, React",
-      "REST APIs, Git"
+      "React, Node.js, Express.js",
+      "MongoDB, Mongoose",
+      "REST APIs, JWT, Git"
     ],
     "imageSrc": "history/keelworks.png"
   },
@@ -17,9 +17,9 @@
     "startDate": "Jun, 2022",
     "endDate": "Jul, 2023",
     "experiences": [
-      "Node.js, Express.js, MongoDB",
-      "JavaScript, React, Redux",
-      "REST APIs, Git"
+      "React, Node.js, Express.js",
+      "MongoDB, Mongoose",
+      "Redux, REST APIs"
     ],
     "imageSrc": "history/zaio.png"
   },
@@ -29,9 +29,9 @@
     "startDate": "Jun, 2016",
     "endDate": "May, 2021",
     "experiences": [
-      "Stakeholder Management",
-      "Team Leadership",
-      "Cross-Functional Collaboration"
+      "Agile Methodologies",
+      "Project Scoping",
+      "Cross-Functional Collaboration, Leadership"
     ],
     "imageSrc": "history/woolworths.png"
   }

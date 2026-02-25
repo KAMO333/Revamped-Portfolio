@@ -1,5 +1,9 @@
 [
   {
+    "title": "React",
+    "imageSrc": "skills/react.png"
+  },
+  {
     "title": "Node.js",
     "imageSrc": "skills/node.png"
   },
@@ -8,12 +12,8 @@
     "imageSrc": "skills/express.png"
   },
   {
-    "title": "React",
-    "imageSrc": "skills/react.png"
-  },
-  {
-    "title": "JavaScript",
-    "imageSrc": "skills/javascript.png"
+    "title": "REST API",
+    "imageSrc": "skills/rest-api.png"
   },
   {
     "title": "MongoDB",
@@ -24,12 +24,12 @@
     "imageSrc": "skills/python.png"
   },
   {
-    "title": "HTML",
-    "imageSrc": "skills/html.png"
+    "title": "JavaScript",
+    "imageSrc": "skills/javascript.png"
   },
   {
-    "title": "CSS",
-    "imageSrc": "skills/css.png"
+    "title": "Tailwind CSS",
+    "imageSrc": "skills/tailwindcss.svg"
   },
   {
     "title": "Git",
