@@ -18,7 +18,11 @@ export const About = () => {
             <div className={styles.aboutItemText}>
               <h3>Frontend Engineering 🎨</h3>
               <p>
-                I architect responsive, high-performance user interfaces using React and JavaScript. By leveraging Tailwind CSS, HTML, and CSS, I deliver accessible, SEO-optimized experiences with a focus on efficient state management, component modularity, and frontend performance.
+                I architect responsive, high-performance user interfaces
+                specialising in React.js and JavaScript(ES6+). By leveraging
+                Tailwind CSS, I deliver accessible, SEO-optimized experiences
+                with a focus on component modularity and frontend performance
+                (built on a foundation of HTML and CSS){" "}
               </p>
             </div>
           </li>
@@ -27,16 +31,29 @@ export const About = () => {
             <div className={styles.aboutItemText}>
               <h3>Backend & Data Engineering ⚡</h3>
               <p>
-                I architect scalable, secure server-side applications specializing in Node.js, Express, Python, and Flask. I design and implement robust RESTful APIs with a focus on high-concurrency and performance. My data expertise includes MongoDB, Redis, and Firebase, allowing me to implement the right persistence strategy for diverse application needs.
+                I architect scalable server-side applications specialising in
+                Node.js, Express.js, and Python/Flask. I design robust RESTful
+                APIs with a focus on security and performance, utilizing
+                MongoDB/Mongoose, Redis, and Firebase for diverse persistence
+                strategies
               </p>
             </div>
           </li>
           <li className={styles.aboutItem}>
             <img src={getImageUrl("about/cursorIcon.png")} alt="UI icon" />
             <div className={styles.aboutItemText}>
-              <h3>Systems & Quality Engineering 💡</h3>
+              <h3>WeThinkCode_ Alumnus 💡</h3>
               <p>
-                As a WeThinkCode_ alumnus, I leverage a deep foundation in Object-Oriented Programming (Python, Java & JavaScript) and System Design to build distributed, resilient architectures. My engineering standard is rooted in Quality Assurance, utilizing Test-Driven Development (TDD), Agile (Scrum) methodologies, and ORMs to ensure code reliability. I maintain high deployment standards through Git version control, Docker containerization, and automated CI/CD pipelines.
+                As a WeThinkCode_ alumnus with elective specialization in
+                Systems Integration, I leverage a foundation in Object-Oriented
+                Programming (Java, Python, and JavaScript(ES6+)) and System
+                Design to build resilient, connected architectures. My
+                engineering standard is rooted in Quality Assurance, utilizing
+                Test-Driven Development (TDD) and Agile methodologies. I
+                maintain high deployment standards through Git, GitHub, and
+                GitLab, using SQL (Sqlite), Docker containerization, and
+                automated CI/CD pipelines to ensure high-reliability, integrated
+                code.
               </p>
             </div>
           </li>
