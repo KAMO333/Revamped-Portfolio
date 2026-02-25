@@ -12,12 +12,12 @@
     "imageSrc": "skills/express.png"
   },
   {
-    "title": "REST API",
-    "imageSrc": "skills/rest-api.png"
-  },
-  {
     "title": "MongoDB",
     "imageSrc": "skills/mongodb.png"
+  },
+  {
+    "title": "REST API",
+    "imageSrc": "skills/rest-api.png"
   },
   {
     "title": "Python",
