@@ -46,14 +46,13 @@ export const About = () => {
               <p>
                 As a WeThinkCode_ alumnus with elective specialization in
                 Systems Integration, I leverage a foundation in Object-Oriented
-                Programming (Java, Python, and JavaScript(ES6+)) and System
+                Programming (Java, Python, and JavaScript (ES6+)) and System
                 Design to build resilient, connected architectures. My
-                engineering standard is rooted in Quality Assurance, utilizing
-                Test-Driven Development (TDD) and Agile methodologies. I
-                maintain high deployment standards through Git, GitHub, and
-                GitLab, using SQL (Sqlite), Docker containerization, and
-                automated CI/CD pipelines to ensure high-reliability, integrated
-                code.
+                engineering standard is rooted in Test-Driven Development (TDD)
+                and Agile methodologies. I maintain high deployment standards
+                through Git, GitHub, and GitLab, using SQL (SQLite), ORMs,
+                Docker containerization, and automated CI/CD pipelines to ensure
+                high-reliability, integrated code.
               </p>
             </div>
           </li>
