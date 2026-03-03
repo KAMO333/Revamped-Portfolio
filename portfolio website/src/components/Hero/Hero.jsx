@@ -9,7 +9,7 @@ export const Hero = () => {
         <h1 className={styles.title}>Hi, I'm Kamogelo.</h1>
         <p className={styles.description}>
           <strong>Full Stack Software Engineer</strong> specialising in{" "}
-          <strong>React.js, Node.js, Express.js</strong> and{" "}
+          <strong>React, JavaScript, Node.js, Express.js</strong> and{" "}
           <strong>MongoDB</strong>. Building scalable web applications focused
           on performance and secure user experiences.
         </p>

@@ -4,35 +4,31 @@
     "imageSrc": "skills/react.png"
   },
   {
-    "title": "Node.js",
-    "imageSrc": "skills/node.png"
-  },
-  {
-    "title": "Express.js",
-    "imageSrc": "skills/express.png"
-  },
-  {
-    "title": "MongoDB",
-    "imageSrc": "skills/mongodb.png"
-  },
-  {
-    "title": "REST API",
-    "imageSrc": "skills/rest-api.png"
-  },
-  {
-    "title": "Python",
-    "imageSrc": "skills/python.png"
+    "title": "Tailwind CSS",
+    "imageSrc": "skills/tailwindcss.svg"
   },
   {
     "title": "JavaScript",
     "imageSrc": "skills/javascript.png"
   },
   {
-    "title": "Tailwind CSS",
-    "imageSrc": "skills/tailwindcss.svg"
+    "title": "Node.js",
+    "imageSrc": "skills/node.png"
+  },
+  {
+    "title": "MongoDB",
+    "imageSrc": "skills/mongodb.png"
+  },
+  {
+    "title": "Jest",
+    "imageSrc": "skills/jest.png"
+  },
+  {
+    "title": "Docker",
+    "imageSrc": "skills/docker.png"
   },
   {
     "title": "Git",
-    "imageSrc": "skills/Git.png"
+    "imageSrc": "skills/git.png"
   }
 ]

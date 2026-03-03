@@ -7,7 +7,7 @@
     "experiences": [
       "React, Node.js, Express.js",
       "MongoDB, Mongoose",
-      "REST APIs, JWT, Git"
+      "RESTful APIs, JWT, Git"
     ],
     "imageSrc": "history/keelworks.png"
   },
@@ -19,7 +19,7 @@
     "experiences": [
       "React, Node.js, Express.js",
       "MongoDB, Mongoose",
-      "Redux, REST APIs"
+      "Redux, RESTful APIs"
     ],
     "imageSrc": "history/zaio.png"
   },
