@@ -8,7 +8,7 @@ export const Hero = () => {
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm Kamogelo.</h1>
         <p className={styles.description}>
-          <strong>Full Stack Software Engineer</strong> specialising in{" "}
+          <strong>I'm a Full Stack Software Engineer</strong> specialising in{" "}
           <strong>React, JavaScript, Node.js, Express.js</strong> and{" "}
           <strong>MongoDB</strong>. Building scalable web applications focused
           on performance and secure user experiences.

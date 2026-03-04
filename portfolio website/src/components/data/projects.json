@@ -7,13 +7,15 @@
       "React",
       "TailwindCSS",
       "JavaScript",
-      "RESTful API",
       "Node.js",
       "Express.js",
+      "RESTful API",
+      "JWT",
       "MongoDB",
       "Jest",
       "Docker",
-      "CI/CD"
+      "CI/CD",
+      "GitHub Actions"
     ],
     "demo": "https://advanced-auth-system-uwj9.onrender.com/",
     "source": "https://github.com/KAMO333/mern-advanced-auth"
@@ -47,10 +49,12 @@
       "Node.js",
       "Express.js",
       "GraphQL",
+      "Apollo Server",
       "MongoDB",
       "Jest",
       "Docker",
-      "CI/CD"
+      "CI/CD",
+      "GitHub Actions"
     ],
     "demo": "https://graphql-expenses-app.onrender.com/",
     "source": "https://github.com/KAMO333/GraphQL-expenses-app"
@@ -59,7 +63,7 @@
     "title": "Tic Tac Toe",
     "imageSrc": "projects/tictactoe.png",
     "description": "React game focusing on Context API state management.",
-    "skills": ["React", "JavaScript", "OOP"],
+    "skills": ["React", "JavaScript"],
     "demo": "https://tictactoe-by-kamo.netlify.app/",
     "source": "https://github.com/KAMO333/tic-tac-toe-game"
   },
@@ -78,11 +82,10 @@
     "skills": [
       "HTML5",
       "CSS3",
-      "Vanilla JavaScript",
-      "OOP",
-      "Node.js",
+      "JavaScript",
       "Jest",
-      "CI/CD"
+      "CI/CD",
+      "GitHub Actions"
     ],
     "demo": "https://mytunewebsite.netlify.app/",
     "source": "https://github.com/KAMO333/myTunes-"
