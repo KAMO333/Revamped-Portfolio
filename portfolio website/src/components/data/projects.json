@@ -7,11 +7,13 @@
       "React",
       "TailwindCSS",
       "JavaScript",
+      "TypeScript",
       "Node.js",
       "Express.js",
       "RESTful API",
       "JWT",
       "MongoDB",
+      "PostgreSQL",
       "Jest",
       "Docker",
       "CI/CD",
@@ -33,7 +35,11 @@
       "Express.js",
       "MongoDB",
       "Stripe",
-      "Redis"
+      "Redis",
+      "Jest",
+      "Docker",
+      "CI/CD",
+      "GitHub Actions"
     ],
     "demo": "https://mern-e-commerce-e8hp.onrender.com/",
     "source": "https://github.com/KAMO333/mern-e-commerce"
@@ -63,7 +69,16 @@
     "title": "Tic Tac Toe",
     "imageSrc": "projects/tictactoe.png",
     "description": "React game focusing on Context API state management.",
-    "skills": ["React", "JavaScript"],
+    "skills": [
+      "React",
+      "JavaScript",
+      "Styled-Components",
+      "Context API",
+      "Jest",
+      "React Testing Library",
+      "CI/CD",
+      "GitHub Actions"
+    ],
     "demo": "https://tictactoe-by-kamo.netlify.app/",
     "source": "https://github.com/KAMO333/tic-tac-toe-game"
   },

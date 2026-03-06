@@ -12,12 +12,20 @@
     "imageSrc": "skills/javascript.png"
   },
   {
+    "title": "TypeScript",
+    "imageSrc": "skills/typescript.svg"
+  },
+  {
     "title": "Node.js",
     "imageSrc": "skills/node.png"
   },
   {
     "title": "MongoDB",
     "imageSrc": "skills/mongodb.png"
+  },
+  {
+    "title": "PostgreSQL",
+    "imageSrc": "skills/postgresql.png"
   },
   {
     "title": "Jest",
