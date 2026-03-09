@@ -20,6 +20,10 @@
     "imageSrc": "skills/node.png"
   },
   {
+    "title": "Express",
+    "imageSrc": "skills/express.png"
+  },
+  {
     "title": "MongoDB",
     "imageSrc": "skills/mongodb.png"
   },
@@ -38,5 +42,9 @@
   {
     "title": "Git",
     "imageSrc": "skills/git.png"
+  },
+  {
+    "title": "GitHub Actions",
+    "imageSrc": "skills/github.svg"
   }
 ]

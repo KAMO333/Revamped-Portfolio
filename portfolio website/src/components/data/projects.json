@@ -2,106 +2,48 @@
   {
     "title": "Advanced Authentication System",
     "imageSrc": "projects/auth-system.png",
-    "description": "Full stack authentication app with secure JWT implementation",
-    "skills": [
-      "React",
-      "TailwindCSS",
-      "JavaScript",
-      "TypeScript",
-      "Node.js",
-      "Express.js",
-      "RESTful API",
-      "JWT",
-      "MongoDB",
-      "PostgreSQL",
-      "Jest",
-      "Docker",
-      "CI/CD",
-      "GitHub Actions"
-    ],
+    "description": "A production-grade authentication system with email verification, password recovery and protected routes.",
+    "skills": ["React", "Node.js", "MongoDB", "Jest", "Docker"],
     "demo": "https://advanced-auth-system-uwj9.onrender.com/",
     "source": "https://github.com/KAMO333/mern-advanced-auth"
   },
   {
     "title": "E-Commerce",
     "imageSrc": "projects/e-commerce.png",
-    "description": "Full stack MERN storefront with secure Stripe integration.",
-    "skills": [
-      "React",
-      "TailwindCSS",
-      "JavaScript",
-      "RESTful API",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Stripe",
-      "Redis",
-      "Jest",
-      "Docker",
-      "CI/CD",
-      "GitHub Actions"
-    ],
+    "description": "A full-stack online store with product management, cart functionality and Stripe payment processing.",
+    "skills": ["React", "Node.js", "MongoDB", "Stripe", "Redis"],
     "demo": "https://mern-e-commerce-e8hp.onrender.com/",
     "source": "https://github.com/KAMO333/mern-e-commerce"
   },
   {
     "title": "Expense Tracker",
     "imageSrc": "projects/expense tracker.png",
-    "description": "Full stack dashboard utilizing GraphQL and Apollo Client.",
-    "skills": [
-      "React",
-      "TailwindCSS",
-      "JavaScript",
-      "Node.js",
-      "Express.js",
-      "GraphQL",
-      "Apollo Server",
-      "MongoDB",
-      "Jest",
-      "Docker",
-      "CI/CD",
-      "GitHub Actions"
-    ],
+    "description": "A full-stack expense tracking dashboard with real-time analytics powered by GraphQL.",
+    "skills": ["React", "Node.js", "GraphQL", "MongoDB", "Jest"],
     "demo": "https://graphql-expenses-app.onrender.com/",
     "source": "https://github.com/KAMO333/GraphQL-expenses-app"
   },
   {
     "title": "Tic Tac Toe",
     "imageSrc": "projects/tictactoe.png",
-    "description": "React game focusing on Context API state management.",
-    "skills": [
-      "React",
-      "JavaScript",
-      "Styled-Components",
-      "Context API",
-      "Jest",
-      "React Testing Library",
-      "CI/CD",
-      "GitHub Actions"
-    ],
+    "description": "A multiplayer browser game with score tracking and lofi music.",
+    "skills": ["React", "Jest", "CI/CD"],
     "demo": "https://tictactoe-by-kamo.netlify.app/",
     "source": "https://github.com/KAMO333/tic-tac-toe-game"
   },
   {
     "title": "Photo Gallery",
     "imageSrc": "projects/photogallery.png",
-    "description": "Cloud-based gallery with Firebase real-time persistence.",
-    "skills": ["React", "JavaScript", "RESTful API", "Firebase"],
+    "description": "A cloud-based photo gallery with real-time image persistence.",
+    "skills": ["React", "Firebase"],
     "demo": "https://photogallerywebapp.netlify.app/",
     "source": "https://github.com/KAMO333/photo-gallery"
   },
   {
     "title": "myTunes",
     "imageSrc": "projects/mytunes.png",
-    "description": "Media landing page featuring modern CSS architecture.",
-    "skills": [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-      "Jest",
-      "CI/CD",
-      "GitHub Actions"
-    ],
+    "description": "A media entertainment landing page.",
+    "skills": ["HTML5", "CSS3", "JavaScript"],
     "demo": "https://mytunewebsite.netlify.app/",
     "source": "https://github.com/KAMO333/myTunes-"
   }
