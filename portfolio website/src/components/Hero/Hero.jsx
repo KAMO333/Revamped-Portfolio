@@ -8,10 +8,11 @@ export const Hero = () => {
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm Kamogelo.</h1>
         <p className={styles.description}>
-          <strong>I'm a Full Stack Software Engineer</strong> specialising in{" "}
-          <strong>React, JavaScript, Node.js, Express.js</strong> and{" "}
-          <strong>MongoDB</strong>. Building scalable web applications focused
-          on performance and secure user experiences.
+          I'm a Full Stack Developer building secure, tested web applications
+          with <strong>React, Node.js</strong> and <strong>MongoDB.</strong>
+          <br />
+          Containerised with <strong>Docker</strong> and shipped through{" "}
+          <strong>CI/CD</strong> pipelines.
         </p>
         <a href="mailto:kamosworkemail@gmail.com" className={styles.contactBtn}>
           Contact Me
