@@ -3,7 +3,7 @@
     "title": "Advanced Authentication System",
     "imageSrc": "projects/auth-system.png",
     "description": "A production-grade authentication system with email verification, password recovery and protected routes.",
-    "skills": ["React", "Node.js", "MongoDB", "Jest", "Docker"],
+    "skills": ["React", "TypeScript", "Node.js", "MongoDB", "Jest", "Docker"],
     "demo": "https://advanced-auth-system-uwj9.onrender.com/",
     "source": "https://github.com/KAMO333/mern-advanced-auth"
   },

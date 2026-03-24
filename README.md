@@ -1,30 +1,8 @@
-# Revamped Portfolio Website
+# React + Vite
 
-This is my newly revamped portfolio website, developed with React. It showcases my best work, experience, job description, and the skills I've acquired so far.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Getting Started
-To get started, clone the repository using the following command:
-```bash
-git clone git@github.com:KAMO333/Revamped-Portfolio.git
-```
-Next, navigate to the "portfolio website" folder:
-```bash
-cd "portfolio website"
-```
-## Install Dependencies
-Run the following command to install the necessary dependencies:
-```
-npm install
-```
-## Run the App
-Start the development server by running:
-```
-npm run dev
-```
-Once the server is running, you can view the website at:
-```
-Local: http://localhost:5173/
-```
-## Enjoy browsing the portfolio!
+Currently, two official plugins are available:
 
-
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
