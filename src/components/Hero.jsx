@@ -136,19 +136,34 @@ export const Hero = () => {
               />
             </div>
 
-            {/* HUD Badges: Adjusted size for mobile and hidden on tiny screens to avoid clutter */}
-            <div className="absolute bottom-4 -left-4 md:bottom-6 md:-left-6 z-30 bg-[#0f172a]/95 border border-white/10 p-2 md:p-3 shadow-2xl backdrop-blur-md hidden sm:block min-w-[100px] md:min-w-[120px]">
-              <Terminal className="text-sky-400 mb-1" size={16} />
-              <p className="text-white font-bold text-[9px] md:text-[10px] uppercase">
-                MERN Stack
-              </p>
+            {/* HUD Badge: Stack Focus */}
+            <div className="absolute bottom-6 -left-6 md:bottom-10 md:-left-16 z-30 bg-[#0f172a]/95 border border-white/10 p-3 shadow-2xl backdrop-blur-md hidden sm:block min-w-[130px] md:min-w-[150px]">
+              <div className="flex flex-col gap-1">
+                <div className="flex items-center gap-2">
+                  <Terminal className="text-sky-400" size={16} />
+                  <span className="text-[7px] md:text-[8px] font-mono text-slate-500 uppercase tracking-widest">
+                    Stack_Focus
+                  </span>
+                </div>
+                <p className="text-white font-black text-[10px] md:text-[12px] uppercase tracking-tight">
+                  MERN Stack
+                </p>
+              </div>
             </div>
 
-            <div className="absolute top-8 -right-4 md:top-10 md:-right-6 z-30 bg-[#0f172a]/90 border border-white/10 p-2 md:p-3 shadow-2xl backdrop-blur-md hidden sm:block min-w-[100px] md:min-w-[120px]">
-              <Cpu className="text-indigo-400 mb-1" size={16} />
-              <p className="text-white font-bold text-[9px] md:text-[10px] uppercase">
-                2+ Years Exp
-              </p>
+            {/* HUD Badge: Experience */}
+            <div className="absolute top-10 -right-6 md:top-14 md:-right-16 z-30 bg-[#0f172a]/95 border border-white/10 p-3 shadow-2xl backdrop-blur-md hidden sm:block min-w-[130px] md:min-w-[150px]">
+              <div className="flex flex-col gap-1">
+                <div className="flex items-center gap-2">
+                  <Cpu className="text-indigo-400" size={16} />
+                  <span className="text-[7px] md:text-[8px] font-mono text-slate-500 uppercase tracking-widest">
+                    Experience
+                  </span>
+                </div>
+                <p className="text-white font-black text-[10px] md:text-[12px] uppercase tracking-tight">
+                  2+ Years Exp
+                </p>
+              </div>
             </div>
           </div>
         </div>
