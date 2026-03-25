@@ -11,7 +11,7 @@
     "title": "E-Commerce",
     "imageSrc": "projects/e-commerce.png",
     "description": "A full-stack online store with product management, cart functionality and Stripe payment processing.",
-    "skills": ["React", "Node.js", "MongoDB", "Stripe", "Redis"],
+    "skills": ["React", "Node.js", "MongoDB", "Stripe", "Redis", "Jest"],
     "demo": "https://mern-e-commerce-e8hp.onrender.com/",
     "source": "https://github.com/KAMO333/mern-e-commerce"
   },
@@ -19,7 +19,14 @@
     "title": "Expense Tracker",
     "imageSrc": "projects/expense tracker.png",
     "description": "A full-stack expense tracking dashboard with real-time analytics powered by GraphQL.",
-    "skills": ["React", "Node.js", "GraphQL", "MongoDB", "Jest"],
+    "skills": [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "GraphQL",
+      "MongoDB",
+      "Jest"
+    ],
     "demo": "https://graphql-expenses-app.onrender.com/",
     "source": "https://github.com/KAMO333/GraphQL-expenses-app"
   },

@@ -1,4 +1,4 @@
-import projectsData from "../data/projects.json";
+import projectsData from "./data/projects.json";
 import { ExternalLink } from "lucide-react";
 import {
   SiReact,
@@ -36,6 +36,7 @@ const iconMap = {
   PostgreSQL: <SiPostgresql color="#4169E1" />,
   Python: <SiPython color="#3776AB" />,
   Tailwind: <SiTailwindcss color="#06B6D4" />,
+  "Tailwind CSS": <SiTailwindcss color="#06B6D4" />,
   JavaScript: <SiJavascript color="#F7DF1E" />,
   HTML5: <SiHtml5 color="#E34F26" />,
   HTML: <SiHtml5 color="#E34F26" />,
@@ -89,19 +90,18 @@ export const Projects = () => {
                     {project.description}
                   </p>
 
-                  {/* Skills with LARGER Icons */}
-                  <div className="flex flex-wrap gap-x-6 gap-y-4 mb-8">
+                  <div className="flex flex-wrap gap-x-10 gap-y-6 mb-8">
                     {project.skills.map((skill, index) => (
                       <div
                         key={index}
-                        className="flex items-center gap-2.5 group/skill"
+                        className="flex flex-col items-center gap-3 group/skill min-w-[65px]"
                       >
-                        <span className="text-2xl transition-transform group-hover/skill:-translate-y-1 duration-300">
+                        <span className="text-4xl transition-all group-hover/skill:-translate-y-1 group-hover/skill:drop-shadow-[0_0_12px_rgba(56,189,248,0.4)] duration-300">
                           {iconMap[skill] || (
                             <span className="w-2 h-2 bg-sky-500/50 rounded-full" />
                           )}
                         </span>
-                        <span className="text-[11px] font-mono text-slate-500 group-hover/skill:text-slate-200 transition-colors uppercase tracking-widest">
+                        <span className="text-[10px] font-mono text-slate-500 group-hover/skill:text-white transition-colors uppercase tracking-tighter whitespace-nowrap">
                           {skill}
                         </span>
                       </div>

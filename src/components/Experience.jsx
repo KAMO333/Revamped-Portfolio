@@ -1,4 +1,12 @@
-import { Calendar, MapPin, GraduationCap, Terminal } from "lucide-react";
+import {
+  Calendar,
+  MapPin,
+  GraduationCap,
+  Terminal,
+  Database,
+  Boxes,
+  Workflow,
+} from "lucide-react";
 import {
   SiReact,
   SiNodedotjs,
@@ -10,10 +18,14 @@ import {
   SiPython,
   SiOpenjdk,
   SiDocker,
-  SiGithubactions,
   SiLinux,
   SiPostgresql,
   SiJavascript,
+  SiPostman,
+  SiHtml5,
+  SiGit,
+  SiFirebase,
+  SiTestinglibrary,
 } from "react-icons/si";
 
 export const Experience = () => {
@@ -24,13 +36,16 @@ export const Experience = () => {
       period: "March 2024 - Sept 2024",
       location: "USA (Remote)",
       description:
-        "Built the authentication system for a Portfolio Generator app. Developed custom JWT middleware and integrated frontend React components with Node.js REST APIs for secure profile management. [cite: 28, 29, 32]",
+        "Built the authentication system for a Portfolio Generator app. Developed custom JWT middleware and integrated frontend React components with Node.js REST APIs for secure profile management.",
       tech: [
+        { name: "JavaScript", icon: <SiJavascript color="#F7DF1E" /> },
         { name: "React", icon: <SiReact color="#61DAFB" /> },
         { name: "Node.js", icon: <SiNodedotjs color="#339933" /> },
-        { name: "MongoDB", icon: <SiMongodb color="#47A248" /> },
-        { name: "JWT", icon: <SiJsonwebtokens color="#ffffff" /> },
+        { name: "Express.js", icon: <SiExpress color="#ffffff" /> },
+        { name: "REST API", icon: <SiPostman color="#FF6C37" /> },
+        { name: "JWT", icon: <SiJsonwebtokens color="#D63AFF" /> },
         { name: "Axios", icon: <SiAxios color="#5A29E4" /> },
+        { name: "MongoDB", icon: <SiMongodb color="#47A248" /> },
       ],
     },
     {
@@ -39,13 +54,15 @@ export const Experience = () => {
       period: "June 2022 - July 2023",
       location: "South Africa",
       description:
-        "Built a note-taking engine for an E-Learning platform, contributing to a 40% increase in user session time. Optimized performance using pagination, lazy loading, and MongoDB indexing. [cite: 33, 34, 38]",
+        "Built a note-taking engine for an E-Learning platform, contributing to a 40% increase in user session time. Optimized performance using pagination, lazy loading, and MongoDB indexing.",
       tech: [
+        { name: "JavaScript", icon: <SiJavascript color="#F7DF1E" /> },
         { name: "React", icon: <SiReact color="#61DAFB" /> },
         { name: "Redux", icon: <SiRedux color="#764ABC" /> },
         { name: "Node.js", icon: <SiNodedotjs color="#339933" /> },
-        { name: "MongoDB", icon: <SiMongodb color="#47A248" /> },
         { name: "Express.js", icon: <SiExpress color="#ffffff" /> },
+        { name: "REST API", icon: <SiPostman color="#FF6C37" /> },
+        { name: "MongoDB", icon: <SiMongodb color="#47A248" /> },
       ],
     },
     {
@@ -54,7 +71,7 @@ export const Experience = () => {
       period: "June 2016 - May 2021",
       location: "South Africa",
       description:
-        "Led department operations in a high-pressure retail environment, consistently hitting organisational benchmarks through structured workflows and cross-functional collaboration. [cite: 39, 41, 46]",
+        "Led department operations in a high-pressure retail environment, consistently hitting organisational benchmarks through structured workflows and cross-functional collaboration.",
       tech: [],
     },
   ];
@@ -64,11 +81,32 @@ export const Experience = () => {
       school: "WeThinkCode_",
       qualification: "Occupational Certificate: Software Engineer",
       period: "Sept 2024 - Dec 2025",
-      details:
-        "Advanced curriculum covering Python, Java, OOP, Relational Databases, SOA, and Message Queues. [cite: 48, 50, 52]",
+      details: (
+        <p className="text-slate-400 text-sm font-light leading-relaxed ml-6 max-w-md">
+          Learned <span className="text-sky-400 font-medium">Python</span>,{" "}
+          <span className="text-sky-400 font-medium">Java</span>, and{" "}
+          <span className="text-white font-medium italic">OOP</span> principles
+          alongside <span className="text-indigo-400 font-medium">SQL</span>{" "}
+          databases and{" "}
+          <span className="text-indigo-400 font-medium">ORMs</span>. I
+          engineered full-stack solutions using{" "}
+          <span className="text-white font-medium">Docker</span> and{" "}
+          <span className="text-sky-400 font-medium">CI/CD</span> pipelines,
+          ensuring system reliability through rigorous{" "}
+          <span className="text-green-400 font-medium">TDD</span> and automated
+          testing.
+        </p>
+      ),
       tech: [
         { name: "Python", icon: <SiPython color="#3776AB" /> },
         { name: "Java", icon: <SiOpenjdk color="#007396" /> },
+        { name: "OOP", icon: <Boxes size={22} color="#6366f1" /> },
+        { name: "SQL", icon: <SiPostgresql color="#4169E1" /> },
+        { name: "ORM", icon: <Database size={22} color="#10b981" /> },
+        { name: "TDD", icon: <SiTestinglibrary color="#E33332" /> },
+        { name: "Git", icon: <SiGit color="#F05032" /> },
+        { name: "HTML5/CSS3", icon: <SiHtml5 color="#E34F26" /> },
+        { name: "JavaScript", icon: <SiJavascript color="#F7DF1E" /> },
         { name: "Docker", icon: <SiDocker color="#2496ED" /> },
         { name: "Linux", icon: <SiLinux color="#FCC624" /> },
       ],
@@ -77,12 +115,30 @@ export const Experience = () => {
       school: "Zaio Institute of Technology",
       qualification: "Full Stack Web Development",
       period: "Feb 2022 - Nov 2023",
-      details:
-        "Comprehensive training in modern full-stack architecture and industrial web standards. [cite: 53, 54]",
+      details: (
+        <p className="text-slate-400 text-sm font-light leading-relaxed ml-6 max-w-md">
+          Developed responsive frontends with{" "}
+          <span className="text-sky-400 font-medium">React</span>,{" "}
+          <span className="text-indigo-400 font-medium">Redux</span>, and{" "}
+          <span className="text-white font-medium italic">OOP</span> patterns. I
+          architected scalable backends using{" "}
+          <span className="text-green-400 font-medium">Node.js</span> and{" "}
+          <span className="text-white font-medium">Express</span>, leveraging{" "}
+          <span className="text-orange-400 font-medium">Firebase</span> and{" "}
+          <span className="text-green-500 font-medium">MongoDB</span> for
+          real-time data and cloud storage.
+        </p>
+      ),
       tech: [
+        { name: "HTML/CSS", icon: <SiHtml5 color="#E34F26" /> },
+        { name: "JavaScript", icon: <SiJavascript color="#F7DF1E" /> },
         { name: "React", icon: <SiReact color="#61DAFB" /> },
+        { name: "Redux", icon: <SiRedux color="#764ABC" /> },
         { name: "Node.js", icon: <SiNodedotjs color="#339933" /> },
-        { name: "PostgreSQL", icon: <SiPostgresql color="#4169E1" /> },
+        { name: "Express", icon: <SiExpress color="#ffffff" /> },
+        { name: "Firebase", icon: <SiFirebase color="#FFCA28" /> },
+        { name: "MongoDB", icon: <SiMongodb color="#47A248" /> },
+        { name: "Git", icon: <SiGit color="#F05032" /> },
       ],
     },
   ];
@@ -93,7 +149,6 @@ export const Experience = () => {
       className="py-12 bg-[#030712] px-6 lg:px-24 border-t border-white/5"
     >
       <div className="max-w-6xl mx-auto">
-        {/* 02_ WORK HISTORY */}
         <div className="flex flex-col mb-10">
           <div className="inline-flex items-center gap-2 mb-4">
             <span className="text-sky-500 font-mono text-xs tracking-[0.4em] uppercase">
@@ -109,9 +164,7 @@ export const Experience = () => {
         <div className="relative border-l border-white/10 ml-4 md:ml-0 md:pl-0 mb-20">
           {experiences.map((exp, index) => (
             <div key={index} className="mb-12 ml-8 relative group">
-              {/* Timeline Node - Now Fills on Hover */}
               <div className="absolute -left-[33px] top-1.5 w-2.5 h-2.5 rounded-full bg-transparent border-2 border-sky-500 group-hover:bg-sky-500 group-hover:scale-125 transition-all duration-300" />
-
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
                 <div>
                   <h3 className="text-xl font-black text-white uppercase tracking-tight">
@@ -133,16 +186,19 @@ export const Experience = () => {
               <p className="text-slate-400 text-base font-light leading-relaxed mb-6 max-w-4xl">
                 {exp.description}
               </p>
-
-              <div className="flex flex-wrap gap-4">
-                {exp.tech.map((t) => (
+              <div className="flex flex-wrap gap-6 mt-6">
+                {exp.tech.map((tool) => (
                   <div
-                    key={t.name}
-                    className="flex items-center gap-2 group/icon transition-transform hover:-translate-y-1"
+                    key={tool.name}
+                    className="flex flex-col items-center gap-2 group/icon min-w-[55px]"
                   >
-                    <span className="text-2xl">{t.icon}</span>
-                    <span className="text-[9px] font-mono text-slate-500 group-hover/icon:text-slate-300 transition-colors uppercase">
-                      {t.name}
+                    <div className="transition-transform duration-300 group-hover/icon:-translate-y-1">
+                      <span className="text-4xl drop-shadow-[0_0_5px_rgba(255,255,255,0.05)]">
+                        {tool.icon}
+                      </span>
+                    </div>
+                    <span className="text-[8px] font-mono text-slate-500 group-hover/icon:text-white transition-colors duration-300 uppercase tracking-tighter text-center">
+                      {tool.name}
                     </span>
                   </div>
                 ))}
@@ -151,7 +207,6 @@ export const Experience = () => {
           ))}
         </div>
 
-        {/* 03_ EDUCATION */}
         <div className="flex flex-col mb-10 pt-10 border-t border-white/5">
           <div className="inline-flex items-center gap-2 mb-4">
             <span className="text-indigo-500 font-mono text-xs tracking-[0.4em] uppercase">
@@ -172,7 +227,6 @@ export const Experience = () => {
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  {/* School Name in line with Terminal Symbol */}
                   <div className="flex items-center gap-2">
                     <span className="text-indigo-500 font-mono text-sm">
                       {">_"}
@@ -188,20 +242,22 @@ export const Experience = () => {
                 <p className="text-sky-400 font-mono text-[10px] mb-3 uppercase tracking-tighter ml-6">
                   {edu.qualification}
                 </p>
-                <p className="text-slate-500 text-xs font-light leading-relaxed mb-6 ml-6">
-                  {edu.details}
-                </p>
+                <div className="mb-6">{edu.details}</div>
               </div>
 
-              <div className="flex flex-wrap gap-4 pt-4 border-t border-white/5 ml-6">
-                {edu.tech.map((t) => (
+              <div className="grid grid-cols-4 sm:grid-cols-6 gap-y-6 gap-x-2 mt-6 pt-4 border-t border-white/5 ml-6">
+                {edu.tech.map((tool) => (
                   <div
-                    key={t.name}
-                    className="flex items-center gap-2 transition-transform hover:-translate-y-1"
+                    key={tool.name}
+                    className="flex flex-col items-center gap-2 group/icon min-w-[45px]"
                   >
-                    <span className="text-xl">{t.icon}</span>
-                    <span className="text-[8px] font-mono text-slate-600 uppercase">
-                      {t.name}
+                    <div className="h-8 w-8 flex items-center justify-center transition-transform duration-300 group-hover/icon:-translate-y-1">
+                      <span className="text-3xl opacity-80 group-hover/icon:opacity-100 transition-opacity duration-300">
+                        {tool.icon}
+                      </span>
+                    </div>
+                    <span className="text-[7px] font-mono text-slate-600 group-hover/icon:text-white transition-colors duration-300 uppercase tracking-tighter text-center leading-tight">
+                      {tool.name}
                     </span>
                   </div>
                 ))}
