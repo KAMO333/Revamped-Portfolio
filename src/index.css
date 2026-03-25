@@ -11,6 +11,12 @@
   --font-code: "Fira Code", monospace;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background-color: #030712;
   color: #f9fafb;

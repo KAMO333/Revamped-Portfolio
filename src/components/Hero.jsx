@@ -34,24 +34,26 @@ export const Hero = () => {
   }, [displayText, deleting, roleIndex]);
 
   return (
-    <section className="relative h-screen min-h-[650px] w-full flex items-center justify-center bg-[#030712] px-6 lg:px-16 overflow-hidden">
+    /* Changed h-screen to min-h-screen to prevent content cutoff on small phones */
+    <section className="relative min-h-screen w-full flex items-center justify-center bg-[#030712] px-6 lg:px-16 overflow-hidden py-20 lg:py-0">
       {/* Background Decor */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_20%_30%,rgba(56,189,248,0.03)_0%,transparent_50%)]" />
         <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_80%_70%,rgba(99,102,241,0.03)_0%,transparent_50%)]" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center pt-8">
+      <div className="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center pt-8">
         {/* Left Side: Content */}
-        <div className="lg:col-span-8 space-y-6">
-          <div className="space-y-4">
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-green-500/10 border border-green-500/20">
-              <span className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse" />
-              <span className="text-green-400 text-[10px] font-mono tracking-[0.4em] uppercase font-bold">
+        <div className="lg:col-span-8 space-y-6 text-center lg:text-left flex flex-col items-center lg:items-start">
+          <div className="space-y-4 w-full">
+            {/* Updated Status Badge for perfect vertical alignment */}
+            <div className="inline-flex items-center justify-center px-4 py-1.5 bg-green-500/5 border border-green-500/20 shadow-[0_0_10px_rgba(34,197,94,0.05)]">
+              <span className="text-green-400 text-[9px] md:text-[10px] font-mono tracking-[0.4em] uppercase font-bold leading-none">
                 Status: Available to Work
               </span>
             </div>
-            <h1 className="text-5xl md:text-7xl lg:text-[6.5rem] font-black text-white tracking-tighter leading-[0.85] uppercase">
+            {/* Fluid typography: text-4xl on mobile -> text-7xl on tablet -> 6.5rem on desktop */}
+            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-[6.5rem] font-black text-white tracking-tighter leading-[0.9] lg:leading-[0.85] uppercase">
               Kamogelo
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-blue-500 to-indigo-500 italic">
@@ -60,8 +62,8 @@ export const Hero = () => {
             </h1>
           </div>
 
-          <div className="space-y-5">
-            <div className="flex items-center gap-3 text-lg md:text-2xl font-mono text-white">
+          <div className="space-y-5 w-full">
+            <div className="flex items-center justify-center lg:justify-start gap-3 text-lg md:text-2xl font-mono text-white min-h-[40px]">
               <span className="text-sky-500 font-bold">&gt;</span>
               <span className="font-bold uppercase tracking-tighter">
                 {displayText}
@@ -69,7 +71,8 @@ export const Hero = () => {
               <span className="w-2 h-6 bg-sky-500 animate-pulse" />
             </div>
 
-            <p className="text-slate-400 text-base md:text-lg max-w-lg leading-relaxed font-light border-l-2 border-slate-800 pl-6">
+            {/* Paragraph max-width and centering for mobile */}
+            <p className="text-slate-400 text-sm md:text-lg max-w-lg leading-relaxed font-light border-l-2 border-slate-800 pl-6 text-left mx-auto lg:mx-0">
               Full Stack Developer building with
               <span className="text-white font-medium italic"> React</span> and
               <span className="text-white font-medium italic"> Node.js</span>,
@@ -78,16 +81,14 @@ export const Hero = () => {
             </p>
           </div>
 
-          <div className="flex flex-wrap items-center gap-8 pt-2">
+          <div className="flex flex-wrap justify-center lg:justify-start items-center gap-6 md:gap-8 pt-2">
             <a
               href="#projects"
               className="relative group inline-block active:scale-95 transition-transform"
             >
-              {/* THE GLOWING OFFSET BOX - Now Indigo/Blue Shadow */}
               <div className="absolute inset-0 bg-indigo-500/40 translate-x-1.5 translate-y-1.5 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform blur-[2px]"></div>
 
-              {/* THE MAIN BUTTON - SOLID SKY BLUE TO WHITE */}
-              <div className="relative px-8 py-3.5 bg-sky-500 text-black font-black text-[11px] tracking-[0.3em] border border-sky-400 flex items-center gap-3 group-hover:-translate-x-1.5 group-hover:-translate-y-1.5 hover:bg-white hover:text-black hover:border-white transition-all duration-300 shadow-[0_0_20px_rgba(14,165,233,0.3)] uppercase">
+              <div className="relative px-6 md:px-8 py-3 md:py-3.5 bg-sky-500 text-black font-black text-[10px] md:text-[11px] tracking-[0.3em] border border-sky-400 flex items-center gap-3 group-hover:-translate-x-1.5 group-hover:-translate-y-1.5 hover:bg-white hover:text-black hover:border-white transition-all duration-300 shadow-[0_0_20px_rgba(14,165,233,0.3)] uppercase">
                 VIEW_PROJECTS <Layout size={14} className="opacity-80" />
               </div>
             </a>
@@ -96,24 +97,24 @@ export const Hero = () => {
               <a
                 href="https://github.com/KAMO333"
                 target="_blank"
-                className="text-slate-500 hover:text-white transition-all transform hover:-translate-y-1 hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]"
+                className="text-slate-500 hover:text-white transition-all transform hover:-translate-y-1"
               >
-                <FaGithub size={26} />
+                <FaGithub size={24} />
               </a>
               <a
                 href="https://www.linkedin.com/in/kamogelommopane/"
                 target="_blank"
-                className="text-slate-500 hover:text-sky-400 transition-all transform hover:-translate-y-1 hover:drop-shadow-[0_0_8px_rgba(14,165,233,0.5)]"
+                className="text-slate-500 hover:text-sky-400 transition-all transform hover:-translate-y-1"
               >
-                <FaLinkedin size={26} />
+                <FaLinkedin size={24} />
               </a>
             </div>
           </div>
         </div>
 
-        {/* Right Side: Photo */}
-        <div className="lg:col-span-4 flex justify-center lg:justify-end">
-          <div className="relative w-full max-w-[300px] aspect-[1/1.2] group">
+        {/* Right Side: Photo - Centers on mobile, right-aligned on desktop */}
+        <div className="lg:col-span-4 flex justify-center lg:justify-end mt-8 lg:mt-0">
+          <div className="relative w-full max-w-[240px] sm:max-w-[300px] aspect-[1/1.2] group">
             <div
               className="absolute inset-0 z-0 bg-gradient-to-br from-sky-500 via-blue-500 to-indigo-500 opacity-20 animate-pulse"
               style={{
@@ -135,22 +136,17 @@ export const Hero = () => {
               />
             </div>
 
-            <div className="absolute bottom-6 -left-6 z-30 bg-[#0f172a]/95 border border-white/10 p-3 shadow-2xl backdrop-blur-md hidden md:block min-w-[120px]">
-              <Terminal className="text-sky-400 mb-1" size={18} />
-              <p className="text-[7px] font-mono text-slate-500 uppercase tracking-widest leading-none">
-                Stack Focus
-              </p>
-              <p className="text-white font-bold text-[10px] uppercase">
+            {/* HUD Badges: Adjusted size for mobile and hidden on tiny screens to avoid clutter */}
+            <div className="absolute bottom-4 -left-4 md:bottom-6 md:-left-6 z-30 bg-[#0f172a]/95 border border-white/10 p-2 md:p-3 shadow-2xl backdrop-blur-md hidden sm:block min-w-[100px] md:min-w-[120px]">
+              <Terminal className="text-sky-400 mb-1" size={16} />
+              <p className="text-white font-bold text-[9px] md:text-[10px] uppercase">
                 MERN Stack
               </p>
             </div>
 
-            <div className="absolute top-10 -right-6 z-30 bg-[#0f172a]/90 border border-white/10 p-3 shadow-2xl backdrop-blur-md hidden md:block min-w-[120px]">
-              <Cpu className="text-indigo-400 mb-1" size={18} />
-              <p className="text-[7px] font-mono text-slate-500 uppercase tracking-widest leading-none">
-                Experience
-              </p>
-              <p className="text-white font-bold text-[10px] uppercase">
+            <div className="absolute top-8 -right-4 md:top-10 md:-right-6 z-30 bg-[#0f172a]/90 border border-white/10 p-2 md:p-3 shadow-2xl backdrop-blur-md hidden sm:block min-w-[100px] md:min-w-[120px]">
+              <Cpu className="text-indigo-400 mb-1" size={16} />
+              <p className="text-white font-bold text-[9px] md:text-[10px] uppercase">
                 2+ Years Exp
               </p>
             </div>
@@ -158,7 +154,8 @@ export const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-slate-700 animate-bounce">
+      {/* Hide scroll indicator on very small screens to save space */}
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-slate-700 animate-bounce hidden sm:block">
         <a href="#about">
           <ArrowDown size={28} />
         </a>
