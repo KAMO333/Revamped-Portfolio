@@ -82,7 +82,7 @@ export const Experience = () => {
       qualification: "Occupational Certificate: Software Engineer",
       period: "Sept 2024 - Dec 2025",
       details: (
-        <p className="text-slate-400 text-sm font-light leading-relaxed ml-6 max-w-md">
+        <p className="text-slate-400 text-sm font-light leading-relaxed ml-2 md:ml-6 max-w-md">
           Learned <span className="text-sky-400 font-medium">Python</span>,{" "}
           <span className="text-sky-400 font-medium">Java</span>, and{" "}
           <span className="text-white font-medium italic">OOP</span> principles
@@ -91,10 +91,7 @@ export const Experience = () => {
           <span className="text-indigo-400 font-medium">ORMs</span>. I
           engineered full-stack solutions using{" "}
           <span className="text-white font-medium">Docker</span> and{" "}
-          <span className="text-sky-400 font-medium">CI/CD</span> pipelines,
-          ensuring system reliability through rigorous{" "}
-          <span className="text-green-400 font-medium">TDD</span> and automated
-          testing.
+          <span className="text-sky-400 font-medium">CI/CD</span> pipelines.
         </p>
       ),
       tech: [
@@ -116,17 +113,14 @@ export const Experience = () => {
       qualification: "Full Stack Web Development",
       period: "Feb 2022 - Nov 2023",
       details: (
-        <p className="text-slate-400 text-sm font-light leading-relaxed ml-6 max-w-md">
+        <p className="text-slate-400 text-sm font-light leading-relaxed ml-2 md:ml-6 max-w-md">
           Developed responsive frontends with{" "}
           <span className="text-sky-400 font-medium">React</span>,{" "}
           <span className="text-indigo-400 font-medium">Redux</span>, and{" "}
           <span className="text-white font-medium italic">OOP</span> patterns. I
           architected scalable backends using{" "}
           <span className="text-green-400 font-medium">Node.js</span> and{" "}
-          <span className="text-white font-medium">Express</span>, leveraging{" "}
-          <span className="text-orange-400 font-medium">Firebase</span> and{" "}
-          <span className="text-green-500 font-medium">MongoDB</span> for
-          real-time data and cloud storage.
+          <span className="text-white font-medium">Express</span>.
         </p>
       ),
       tech: [
@@ -154,50 +148,52 @@ export const Experience = () => {
             <span className="text-sky-500 font-mono text-xs tracking-[0.4em] uppercase">
               02_
             </span>
-            <h2 className="text-white font-black text-3xl uppercase tracking-tighter">
+            <h2 className="text-white font-black text-2xl md:text-3xl uppercase tracking-tighter">
               Work_History
             </h2>
           </div>
           <div className="h-[1px] w-full bg-gradient-to-r from-sky-500/50 to-transparent" />
         </div>
 
-        <div className="relative border-l border-white/10 ml-4 md:ml-0 md:pl-0 mb-20">
+        {/* Timeline margin fix for mobile: ml-2 on mobile, ml-0 on desktop */}
+        <div className="relative border-l border-white/10 ml-2 md:ml-0 mb-20">
           {experiences.map((exp, index) => (
-            <div key={index} className="mb-12 ml-8 relative group">
-              <div className="absolute -left-[33px] top-1.5 w-2.5 h-2.5 rounded-full bg-transparent border-2 border-sky-500 group-hover:bg-sky-500 group-hover:scale-125 transition-all duration-300" />
+            <div key={index} className="mb-12 ml-6 md:ml-8 relative group">
+              {/* Dot alignment fix: -left-[25px] on mobile */}
+              <div className="absolute -left-[25px] md:-left-[33px] top-1.5 w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-transparent border-2 border-sky-500 group-hover:bg-sky-500 transition-all duration-300" />
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
                 <div>
-                  <h3 className="text-xl font-black text-white uppercase tracking-tight">
+                  <h3 className="text-lg md:text-xl font-black text-white uppercase tracking-tight">
                     {exp.role}
                   </h3>
                   <p className="text-sky-500 font-mono text-xs font-bold tracking-wider">
                     {exp.company}
                   </p>
                 </div>
-                <div className="flex flex-wrap gap-4 text-green-400 font-mono text-[9px] uppercase tracking-widest">
-                  <span className="flex items-center gap-2 bg-green-500/5 px-2 py-1 border border-green-500/10">
+                <div className="flex flex-wrap gap-2 text-green-400 font-mono text-[8px] md:text-[9px] uppercase tracking-widest">
+                  <span className="flex items-center gap-2 bg-green-500/5 px-2 py-1 border border-green-500/10 whitespace-nowrap">
                     <Calendar size={10} /> {exp.period}
                   </span>
-                  <span className="flex items-center gap-2 bg-green-500/5 px-2 py-1 border border-green-500/10">
-                    <MapPin size={10} /> {exp.location}
-                  </span>
+                  {exp.location && (
+                    <span className="flex items-center gap-2 bg-green-500/5 px-2 py-1 border border-green-500/10 whitespace-nowrap">
+                      <MapPin size={10} /> {exp.location}
+                    </span>
+                  )}
                 </div>
               </div>
-              <p className="text-slate-400 text-base font-light leading-relaxed mb-6 max-w-4xl">
+              <p className="text-slate-400 text-sm md:text-base font-light leading-relaxed mb-6">
                 {exp.description}
               </p>
-              <div className="flex flex-wrap gap-6 mt-6">
+              <div className="grid grid-cols-4 sm:flex sm:flex-wrap gap-4 mt-6">
                 {exp.tech.map((tool) => (
                   <div
                     key={tool.name}
-                    className="flex flex-col items-center gap-2 group/icon min-w-[55px]"
+                    className="flex flex-col items-center gap-2 group/icon min-w-[45px] md:min-w-[55px]"
                   >
                     <div className="transition-transform duration-300 group-hover/icon:-translate-y-1">
-                      <span className="text-4xl drop-shadow-[0_0_5px_rgba(255,255,255,0.05)]">
-                        {tool.icon}
-                      </span>
+                      <span className="text-2xl md:text-4xl">{tool.icon}</span>
                     </div>
-                    <span className="text-[8px] font-mono text-slate-500 group-hover/icon:text-white transition-colors duration-300 uppercase tracking-tighter text-center">
+                    <span className="text-[7px] md:text-[8px] font-mono text-slate-500 group-hover/icon:text-white uppercase text-center">
                       {tool.name}
                     </span>
                   </div>
@@ -212,18 +208,18 @@ export const Experience = () => {
             <span className="text-indigo-500 font-mono text-xs tracking-[0.4em] uppercase">
               03_
             </span>
-            <h2 className="text-white font-black text-3xl uppercase tracking-tighter">
+            <h2 className="text-white font-black text-2xl md:text-3xl uppercase tracking-tighter">
               Education
             </h2>
           </div>
           <div className="h-[1px] w-full bg-gradient-to-r from-indigo-500/50 to-transparent" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {education.map((edu, index) => (
             <div
               key={index}
-              className="group p-5 bg-[#0f172a]/50 border border-white/5 hover:border-indigo-500/30 transition-all duration-300 flex flex-col justify-between"
+              className="group p-4 md:p-5 bg-[#0f172a]/50 border border-white/5 hover:border-indigo-500/30 transition-all duration-300 flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
@@ -231,32 +227,33 @@ export const Experience = () => {
                     <span className="text-indigo-500 font-mono text-sm">
                       {">_"}
                     </span>
-                    <h3 className="text-white font-bold text-sm uppercase tracking-tight">
+                    <h3 className="text-white font-bold text-sm uppercase">
                       {edu.school}
                     </h3>
                   </div>
-                  <span className="text-green-400 font-mono text-[9px] uppercase tracking-widest bg-green-500/5 px-2 py-1 border border-green-500/10">
+                  <span className="text-green-400 font-mono text-[8px] uppercase bg-green-500/5 px-2 py-1 border border-green-500/10">
                     {edu.period}
                   </span>
                 </div>
-                <p className="text-sky-400 font-mono text-[10px] mb-3 uppercase tracking-tighter ml-6">
+                <p className="text-sky-400 font-mono text-[9px] mb-3 uppercase tracking-tighter ml-2 md:ml-6">
                   {edu.qualification}
                 </p>
                 <div className="mb-6">{edu.details}</div>
               </div>
 
-              <div className="grid grid-cols-4 sm:grid-cols-6 gap-y-6 gap-x-2 mt-6 pt-4 border-t border-white/5 ml-6">
+              {/* Education grid fix: 4 columns on mobile, 6 on tablet+ */}
+              <div className="grid grid-cols-4 sm:grid-cols-6 gap-y-6 gap-x-2 mt-6 pt-4 border-t border-white/5 ml-0 md:ml-6">
                 {edu.tech.map((tool) => (
                   <div
                     key={tool.name}
-                    className="flex flex-col items-center gap-2 group/icon min-w-[45px]"
+                    className="flex flex-col items-center gap-2 group/icon min-w-[40px]"
                   >
                     <div className="h-8 w-8 flex items-center justify-center transition-transform duration-300 group-hover/icon:-translate-y-1">
-                      <span className="text-3xl opacity-80 group-hover/icon:opacity-100 transition-opacity duration-300">
+                      <span className="text-2xl md:text-3xl opacity-80 group-hover/icon:opacity-100 transition-opacity">
                         {tool.icon}
                       </span>
                     </div>
-                    <span className="text-[7px] font-mono text-slate-600 group-hover/icon:text-white transition-colors duration-300 uppercase tracking-tighter text-center leading-tight">
+                    <span className="text-[7px] font-mono text-slate-600 group-hover/icon:text-white uppercase tracking-tighter text-center">
                       {tool.name}
                     </span>
                   </div>
