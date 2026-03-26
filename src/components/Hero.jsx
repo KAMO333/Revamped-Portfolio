@@ -34,7 +34,6 @@ export const Hero = () => {
   }, [displayText, deleting, roleIndex]);
 
   return (
-    /* Changed h-screen to min-h-screen to prevent content cutoff on small phones */
     <section className="relative min-h-screen w-full flex items-center justify-center bg-[#030712] px-6 lg:px-16 overflow-hidden py-20 lg:py-0">
       {/* Background Decor */}
       <div className="absolute inset-0 z-0 pointer-events-none">
@@ -46,13 +45,12 @@ export const Hero = () => {
         {/* Left Side: Content */}
         <div className="lg:col-span-8 space-y-6 text-center lg:text-left flex flex-col items-center lg:items-start">
           <div className="space-y-4 w-full">
-            {/* Updated Status Badge for perfect vertical alignment */}
+            {/* Fix: tracking-[0.2em] on mobile to prevent status badge overflow in Desktop Mode */}
             <div className="inline-flex items-center justify-center px-4 py-1.5 bg-green-500/5 border border-green-500/20 shadow-[0_0_10px_rgba(34,197,94,0.05)]">
-              <span className="text-green-400 text-[9px] md:text-[10px] font-mono tracking-[0.4em] uppercase font-bold leading-none">
+              <span className="text-green-400 text-[9px] md:text-[10px] font-mono tracking-[0.2em] lg:tracking-[0.4em] uppercase font-bold leading-none text-center">
                 Status: Available to Work
               </span>
             </div>
-            {/* Fluid typography: text-4xl on mobile -> text-7xl on tablet -> 6.5rem on desktop */}
             <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-[6.5rem] font-black text-white tracking-tighter leading-[0.9] lg:leading-[0.85] uppercase">
               Kamogelo
               <br />
@@ -71,7 +69,6 @@ export const Hero = () => {
               <span className="w-2 h-6 bg-sky-500 animate-pulse" />
             </div>
 
-            {/* Paragraph max-width and centering for mobile */}
             <p className="text-slate-400 text-sm md:text-lg max-w-lg leading-relaxed font-light border-l-2 border-slate-800 pl-6 text-left mx-auto lg:mx-0">
               Full Stack Developer building with
               <span className="text-white font-medium italic"> React</span> and
@@ -97,6 +94,7 @@ export const Hero = () => {
               <a
                 href="https://github.com/KAMO333"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-slate-500 hover:text-white transition-all transform hover:-translate-y-1"
               >
                 <FaGithub size={24} />
@@ -104,6 +102,7 @@ export const Hero = () => {
               <a
                 href="https://www.linkedin.com/in/kamogelommopane/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-slate-500 hover:text-sky-400 transition-all transform hover:-translate-y-1"
               >
                 <FaLinkedin size={24} />
@@ -112,9 +111,9 @@ export const Hero = () => {
           </div>
         </div>
 
-        {/* Right Side: Photo - Centers on mobile, right-aligned on desktop */}
+        {/* Right Side: Photo - Fixed widths prevent ballooning in Desktop Mode on Mobile */}
         <div className="lg:col-span-4 flex justify-center lg:justify-end mt-8 lg:mt-0">
-          <div className="relative w-full max-w-[240px] sm:max-w-[300px] aspect-[1/1.2] group">
+          <div className="relative w-[240px] sm:w-[300px] lg:w-full lg:max-w-none aspect-[1/1.2] group flex-shrink-0">
             <div
               className="absolute inset-0 z-0 bg-gradient-to-br from-sky-500 via-blue-500 to-indigo-500 opacity-20 animate-pulse"
               style={{
@@ -135,7 +134,7 @@ export const Hero = () => {
                 className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 transition-all duration-1000"
               />
             </div>
-            {/* HUD Badge: Stack Focus (Left Side) */}
+            {/* HUD Badge: Stack Focus */}
             <div className="absolute top-40 -left-6 md:top-48 md:-left-16 z-30 bg-[#0f172a]/95 border border-white/10 p-3 shadow-2xl backdrop-blur-md hidden sm:block min-w-[130px] md:min-w-[150px]">
               <div className="flex flex-col gap-1">
                 <div className="flex items-center gap-2">
@@ -150,7 +149,7 @@ export const Hero = () => {
               </div>
             </div>
 
-            {/* HUD Badge: Experience (Right Side) */}
+            {/* HUD Badge: Experience */}
             <div className="absolute top-40 -right-6 md:top-48 md:-right-16 z-30 bg-[#0f172a]/95 border border-white/10 p-3 shadow-2xl backdrop-blur-md hidden sm:block min-w-[130px] md:min-w-[150px]">
               <div className="flex flex-col gap-1">
                 <div className="flex items-center gap-2">
