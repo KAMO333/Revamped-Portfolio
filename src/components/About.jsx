@@ -55,25 +55,24 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="py-12 md:py-20 bg-[#030712] px-6 lg:px-24 border-t border-white/5"
+      className="py-12 md:py-24 bg-[#030712] px-6 lg:px-24 border-t border-white/5"
     >
       <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col mb-8">
+        <div className="flex flex-col mb-10 md:mb-12">
           <div className="inline-flex items-center gap-2 mb-4">
             <span className="text-sky-500 font-mono text-xs tracking-[0.4em] uppercase">
               01_
             </span>
-            {/* Fluid Heading: text-2xl on tiny screens, text-3xl on desktop */}
-            <h2 className="text-white font-black text-2xl md:text-3xl uppercase tracking-tighter">
+            <h2 className="text-white font-black text-2xl md:text-4xl uppercase tracking-tighter">
               About_Me
             </h2>
           </div>
           <div className="h-[1px] w-full bg-gradient-to-r from-sky-500/50 to-transparent" />
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12 lg:gap-16 items-start">
           {/* LEFT SIDE: BIO TEXT */}
-          <div className="lg:col-span-7 space-y-6 md:space-y-8 text-slate-400 text-base md:text-lg leading-relaxed font-light">
+          <div className="md:col-span-7 space-y-6 md:space-y-8 text-slate-400 text-base md:text-lg leading-relaxed font-light">
             <p>
               I'm a{" "}
               <span className="text-white font-medium italic">
@@ -116,33 +115,33 @@ export const About = () => {
           </div>
 
           {/* RIGHT SIDE: SKILLS GRID */}
-          <div className="lg:col-span-5 flex flex-col gap-6 h-full w-full">
+          <div className="md:col-span-5 flex flex-col gap-6 w-full">
             {skills.map((skill, index) => (
               <div
                 key={index}
-                className="group p-4 md:p-5 bg-[#0f172a]/50 border border-white/5 hover:border-sky-500/30 transition-all duration-300 flex-1"
+                className="group p-5 bg-[#0f172a]/50 border border-white/5 hover:border-sky-500/30 transition-all duration-300"
               >
                 <div className="flex items-center gap-3 mb-6">
-                  <Terminal size={16} className="text-sky-500" />
+                  <Terminal size={18} className="text-sky-500 shrink-0" />
                   <h3 className="text-white font-bold text-xs uppercase tracking-[0.2em]">
                     {skill.category}
                   </h3>
                 </div>
 
-                {/* Grid Adjustment: 3 columns on tiny mobile, 4 on small, 5 on larger */}
-                <div className="grid grid-cols-3 xs:grid-cols-4 sm:grid-cols-5 gap-y-8 gap-x-2">
+                {/* Fix: grid-cols-5 base ensures all 5 icons stay in one row on mobile */}
+                <div className="grid grid-cols-5 md:grid-cols-4 lg:grid-cols-5 gap-y-6 gap-x-2 sm:gap-x-4">
                   {skill.items.map((item) => (
                     <div
                       key={item.name}
-                      className="flex flex-col items-center gap-3 group/icon transition-all"
+                      className="flex flex-col items-center gap-2 group/icon transition-all"
                     >
-                      <div className="h-10 w-10 flex items-center justify-center">
-                        <span className="text-3xl transition-transform duration-300 group-hover/icon:scale-110 drop-shadow-[0_0_8px_rgba(255,255,255,0.05)]">
+                      <div className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 flex items-center justify-center">
+                        <span className="text-2xl sm:text-3xl md:text-4xl transition-transform duration-300 group-hover/icon:scale-110 drop-shadow-[0_0_10px_rgba(255,255,255,0.1)]">
                           {item.icon}
                         </span>
                       </div>
 
-                      <span className="text-[8px] md:text-[9px] font-mono text-slate-500 group-hover/icon:text-white transition-colors uppercase tracking-tighter text-center leading-tight min-h-[18px] flex items-center">
+                      <span className="text-[7px] sm:text-[8px] md:text-[10px] font-mono text-slate-500 group-hover/icon:text-white transition-colors uppercase tracking-tighter text-center leading-tight min-h-[18px] flex items-center">
                         {item.name}
                       </span>
                     </div>
