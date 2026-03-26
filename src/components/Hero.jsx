@@ -135,9 +135,8 @@ export const Hero = () => {
                 className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 transition-all duration-1000"
               />
             </div>
-
-            {/* HUD Badge: Stack Focus */}
-            <div className="absolute bottom-6 -left-6 md:bottom-10 md:-left-16 z-30 bg-[#0f172a]/95 border border-white/10 p-3 shadow-2xl backdrop-blur-md hidden sm:block min-w-[130px] md:min-w-[150px]">
+            {/* HUD Badge: Stack Focus (Left Side) */}
+            <div className="absolute top-40 -left-6 md:top-48 md:-left-16 z-30 bg-[#0f172a]/95 border border-white/10 p-3 shadow-2xl backdrop-blur-md hidden sm:block min-w-[130px] md:min-w-[150px]">
               <div className="flex flex-col gap-1">
                 <div className="flex items-center gap-2">
                   <Terminal className="text-sky-400" size={16} />
@@ -151,8 +150,8 @@ export const Hero = () => {
               </div>
             </div>
 
-            {/* HUD Badge: Experience */}
-            <div className="absolute top-10 -right-6 md:top-14 md:-right-16 z-30 bg-[#0f172a]/95 border border-white/10 p-3 shadow-2xl backdrop-blur-md hidden sm:block min-w-[130px] md:min-w-[150px]">
+            {/* HUD Badge: Experience (Right Side) */}
+            <div className="absolute top-40 -right-6 md:top-48 md:-right-16 z-30 bg-[#0f172a]/95 border border-white/10 p-3 shadow-2xl backdrop-blur-md hidden sm:block min-w-[130px] md:min-w-[150px]">
               <div className="flex flex-col gap-1">
                 <div className="flex items-center gap-2">
                   <Cpu className="text-indigo-400" size={16} />
