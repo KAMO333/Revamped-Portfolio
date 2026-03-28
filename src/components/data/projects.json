@@ -39,11 +39,18 @@
     "source": "https://github.com/KAMO333/tic-tac-toe-game"
   },
   {
-    "title": "Photo Gallery",
-    "imageSrc": "projects/photogallery.png",
-    "description": "A cloud-based photo gallery with real-time image persistence.",
-    "skills": ["React", "Firebase"],
-    "demo": "https://photogallerywebapp.netlify.app/",
+    "title": "The Collection",
+    "imageSrc": "projects/collection.png",
+    "description": "A minimalist, high-performance digital archive that provides seamless image uploads and instant cloud persistence.",
+    "skills": [
+      "React",
+      "Tailwind CSS",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "PostgreSQL"
+    ],
+    "demo": "https://photo-gallery-7osi.vercel.app/",
     "source": "https://github.com/KAMO333/photo-gallery"
   },
   {
