@@ -44,8 +44,8 @@
     "description": "A minimalist, high-performance digital archive that provides seamless image uploads and instant cloud persistence.",
     "skills": [
       "React",
-      "Tailwind CSS",
       "TypeScript",
+      "Tailwind CSS",
       "Node.js",
       "Express",
       "PostgreSQL"
@@ -56,8 +56,8 @@
   {
     "title": "myTunes",
     "imageSrc": "projects/mytunes.png",
-    "description": "A media entertainment landing page.",
-    "skills": ["HTML5", "CSS3", "JavaScript"],
+    "description": "Music website that features top House DJs",
+    "skills": ["HTML5", "CSS3", "JavaScript", "Jest"],
     "demo": "https://mytunewebsite.netlify.app/",
     "source": "https://github.com/KAMO333/myTunes-"
   }
