@@ -6,11 +6,7 @@ export const Hero = () => {
   const [displayText, setDisplayText] = useState("");
   const [roleIndex, setRoleIndex] = useState(0);
   const [deleting, setDeleting] = useState(false);
-  const roles = [
-    "Full Stack Developer",
-    "WeThinkCode_ Alumnus",
-    "Problem Solver",
-  ];
+  const roles = ["React", "TypeScript", "Node.js", "MongoDB", "Docker"];
 
   useEffect(() => {
     const current = roles[roleIndex];
@@ -69,18 +65,19 @@ export const Hero = () => {
             </div>
 
             <p className="text-slate-600 dark:text-slate-400 text-sm md:text-lg max-w-lg leading-relaxed font-light border-l-2 border-slate-300 dark:border-slate-800 pl-6 text-left mx-auto md:mx-0">
-              Full Stack Developer building with
+              Full Stack Engineer with 2 years of professional experience
+              building component-driven UIs with
               <span className="text-slate-900 dark:text-white font-medium italic">
                 {" "}
                 React
               </span>{" "}
-              and
+              and containerizing event-driven RESTful APIs with
               <span className="text-slate-900 dark:text-white font-medium italic">
                 {" "}
                 Node.js
               </span>
-              , writes tests, ships through CI/CD and doesn't call it done until
-              it's running in production.
+              . Backing code with rigorous automated testing and CI/CD
+              pipelines.
             </p>
           </div>
 
@@ -170,7 +167,7 @@ export const Hero = () => {
                   </span>
                 </div>
                 <p className="text-slate-900 dark:text-white font-black text-[10px] md:text-[12px] uppercase tracking-tight">
-                  2+ Years Exp
+                  2 Years Exp
                 </p>
               </div>
             </div>

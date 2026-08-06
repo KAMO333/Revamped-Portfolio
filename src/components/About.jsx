@@ -76,53 +76,40 @@ export const About = () => {
             <p>
               I'm a{" "}
               <span className="text-slate-900 dark:text-white font-medium italic">
-                Full Stack Developer
+                Full Stack Engineer
               </span>{" "}
-              trained at{" "}
+              with 2 years of professional experience specializing in React,
+              TypeScript, Node.js, Express.js, and MongoDB. I build
+              component-driven UIs with Tailwind CSS and containerize
+              event-driven RESTful APIs via Docker, backing my code with
+              rigorous Jest/Vitest testing and GitHub Actions CI/CD pipelines.
+            </p>
+
+            <p>
+              My passion began when I watched a blank screen come to life with
+              just HTML, CSS, and JavaScript—a drive that earned me a spot at{" "}
               <span className="text-slate-900 dark:text-white font-medium underline decoration-sky-500/30">
-                WeThinkCode_
-              </span>{" "}
-              and
-              <span className="text-slate-900 dark:text-white font-medium underline decoration-indigo-500/30">
-                {" "}
-                Zaio Institute of Technology
+                WeThinkCode_ (NQF 6)
               </span>
-              , with hands-on experience building production-ready web
-              applications. My background spans both sides of the stack: from
-              designing REST APIs and auth systems on the backend to building
-              responsive, component-driven UIs on the frontend.
+              . At this elite institution, I mastered peer-to-peer software
+              engineering, object-oriented programming, and brownfield codebase
+              navigation. Specializing in their Service-Oriented Architecture
+              elective, I gained deep expertise in service decomposition,
+              asynchronous communication, and cross-service communication via
+              message queues.
             </p>
+
             <p>
-              What sets my work apart is the emphasis on reliability. I write
-              tests, containerize with{" "}
-              <span className="text-indigo-500 dark:text-indigo-400">
-                Docker
-              </span>
-              , and ship through{" "}
-              <span className="text-sky-500 dark:text-sky-400">
-                CI/CD pipelines
-              </span>
-              . Currently based in{" "}
-              <span className="text-slate-900 dark:text-white">
-                Johannesburg
-              </span>{" "}
-              and actively levelling up in cloud deployments, I bring a
-              structured, detail-oriented approach to every project I touch.
-            </p>
-            <p>
-              Outside of work, I stay sharp through{" "}
-              <span className="text-sky-500 dark:text-sky-400">HackerRank</span>{" "}
-              and{" "}
-              <span className="text-sky-500 dark:text-sky-400">Codewars</span>.
-              I genuinely enjoy the puzzle of algorithmic thinking. I keep up
-              with the dev world through tech news, podcasts and books, and I'm
-              always picking up something new. Right now that's{" "}
-              <span className="text-slate-900 dark:text-white font-medium italic">
-                TypeScript
-              </span>{" "}
-              and{" "}
+              Today, I optimize my daily development workflow using AI tools to
+              write better code faster. I find immense fulfillment in showcasing
+              functional work to family and friends while currently upskilling
+              in relational data modeling with{" "}
               <span className="text-slate-900 dark:text-white font-medium italic">
                 PostgreSQL
+              </span>{" "}
+              and mastering cloud infrastructure deployment using{" "}
+              <span className="text-slate-900 dark:text-white font-medium italic">
+                Azure
               </span>
               .
             </p>
