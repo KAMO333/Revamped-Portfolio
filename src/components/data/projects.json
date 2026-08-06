@@ -3,15 +3,38 @@
     "title": "Advanced Authentication System",
     "imageSrc": "projects/auth-system.png",
     "description": "A production-grade authentication system with email verification, password recovery and protected routes.",
-    "skills": ["React", "TypeScript", "Node.js", "MongoDB", "Jest", "Docker"],
+    "skills": ["TypeScript", "React", "Node.js", "MongoDB", "Jest", "Docker"],
     "demo": "https://advanced-auth-system-uwj9.onrender.com/",
     "source": "https://github.com/KAMO333/mern-advanced-auth"
+  },
+  {
+    "title": "The Collection",
+    "imageSrc": "projects/collection.png",
+    "description": "A minimalist, high-performance digital archive that provides seamless image uploads and instant cloud persistence.",
+    "skills": [
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "PostgreSQL"
+    ],
+    "demo": "https://photo-gallery-7osi.vercel.app/",
+    "source": "https://github.com/KAMO333/photo-gallery"
   },
   {
     "title": "E-Commerce",
     "imageSrc": "projects/e-commerce.png",
     "description": "A full-stack online store with product management, cart functionality and Stripe payment processing.",
-    "skills": ["React", "Node.js", "MongoDB", "Stripe", "Redis", "Jest"],
+    "skills": [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Stripe",
+      "Redis",
+      "Jest"
+    ],
     "demo": "https://mern-e-commerce-e8hp.onrender.com/",
     "source": "https://github.com/KAMO333/mern-e-commerce"
   },
@@ -20,6 +43,7 @@
     "imageSrc": "projects/expense tracker.png",
     "description": "A full-stack expense tracking dashboard with real-time analytics powered by GraphQL.",
     "skills": [
+      "JavaScript",
       "React",
       "Tailwind CSS",
       "Node.js",
@@ -34,30 +58,15 @@
     "title": "Tic Tac Toe",
     "imageSrc": "projects/tictactoe.png",
     "description": "A multiplayer browser game with score tracking and lofi music.",
-    "skills": ["React", "Jest", "CI/CD"],
+    "skills": ["JavaScript", "React", "Jest"],
     "demo": "https://tictactoe-by-kamo.netlify.app/",
     "source": "https://github.com/KAMO333/tic-tac-toe-game"
-  },
-  {
-    "title": "The Collection",
-    "imageSrc": "projects/collection.png",
-    "description": "A minimalist, high-performance digital archive that provides seamless image uploads and instant cloud persistence.",
-    "skills": [
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Node.js",
-      "Express",
-      "PostgreSQL"
-    ],
-    "demo": "https://photo-gallery-7osi.vercel.app/",
-    "source": "https://github.com/KAMO333/photo-gallery"
   },
   {
     "title": "myTunes",
     "imageSrc": "projects/mytunes.png",
     "description": "Music website that features top House DJs",
-    "skills": ["HTML5", "CSS3", "JavaScript", "Jest"],
+    "skills": ["JavaScript", "HTML5", "CSS3", "Jest"],
     "demo": "https://mytunewebsite.netlify.app/",
     "source": "https://github.com/KAMO333/myTunes-"
   }

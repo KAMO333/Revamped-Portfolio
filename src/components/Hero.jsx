@@ -66,12 +66,17 @@ export const Hero = () => {
 
             <p className="text-slate-600 dark:text-slate-400 text-sm md:text-lg max-w-lg leading-relaxed font-light border-l-2 border-slate-300 dark:border-slate-800 pl-6 text-left mx-auto md:mx-0">
               Full Stack Engineer with 2 years of professional experience
-              building component-driven UIs with
+              specializing in
+              <span className="text-slate-900 dark:text-white font-medium italic">
+                {" "}
+                TypeScript
+              </span>
+              , building modular component-driven UIs with
               <span className="text-slate-900 dark:text-white font-medium italic">
                 {" "}
                 React
-              </span>{" "}
-              and containerizing event-driven RESTful APIs with
+              </span>
+              , and containerized event-driven RESTful APIs with
               <span className="text-slate-900 dark:text-white font-medium italic">
                 {" "}
                 Node.js

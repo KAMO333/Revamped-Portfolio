@@ -21,33 +21,33 @@ import {
 export const About = () => {
   const skills = [
     {
-      category: "Frontend",
+      category: "Frontend Development",
       items: [
-        { name: "React", icon: <SiReact color="#61DAFB" /> },
-        { name: "Redux", icon: <SiRedux color="#764ABC" /> },
         { name: "TypeScript", icon: <SiTypescript color="#3178C6" /> },
         { name: "JavaScript", icon: <SiJavascript color="#F7DF1E" /> },
+        { name: "React", icon: <SiReact color="#61DAFB" /> },
+        { name: "Redux", icon: <SiRedux color="#764ABC" /> },
         { name: "Tailwind CSS", icon: <SiTailwindcss color="#06B6D4" /> },
       ],
     },
     {
-      category: "Backend",
+      category: "Backend & Databases",
       items: [
         { name: "Node.js", icon: <SiNodedotjs color="#339933" /> },
         { name: "Express", icon: <SiExpress color="#ffffff" /> },
-        { name: "MongoDB", icon: <SiMongodb color="#47A248" /> },
         { name: "PostgreSQL", icon: <SiPostgresql color="#4169E1" /> },
+        { name: "MongoDB", icon: <SiMongodb color="#47A248" /> },
         { name: "Redis", icon: <SiRedis color="#DC382D" /> },
       ],
     },
     {
-      category: "DevOps_&_Tools",
+      category: "DevOps & Tools",
       items: [
         { name: "Docker", icon: <SiDocker color="#2496ED" /> },
         { name: "Jest", icon: <SiJest color="#C21325" /> },
-        { name: "Claude AI", icon: <SiAnthropic color="#D97757" /> },
         { name: "Linux", icon: <SiLinux color="#FCC624" /> },
         { name: "Git", icon: <SiGit color="#F05032" /> },
+        { name: "Claude AI", icon: <SiAnthropic color="#D97757" /> },
       ],
     },
   ];
