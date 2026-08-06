@@ -21,6 +21,8 @@ import {
   SiLinux,
   SiPostgresql,
   SiJavascript,
+  SiTailwindcss,
+  SiTypescript,
   SiPostman,
   SiHtml5,
   SiGit,
@@ -30,6 +32,20 @@ import {
 
 export const Experience = () => {
   const experiences = [
+    {
+      company: "Powerverse",
+      role: "Junior Front-End Developer",
+      period: "May 2026 - Present",
+      location: "South Africa (Hybrid)",
+      description:
+        "Utilised React, TypeScript, Tailwind CSS, and Docker to build the client-side interface of a critical government management system for the Department of Transport, collaborating with a cross-functional Agile team to deliver a production-ready system.",
+      tech: [
+        { name: "TypeScript", icon: <SiTypescript color="#3178C6" /> },
+        { name: "React", icon: <SiReact color="#61DAFB" /> },
+        { name: "Tailwind CSS", icon: <SiTailwindcss color="#06B6D4" /> },
+        { name: "Docker", icon: <SiDocker color="#2496ED" /> },
+      ],
+    },
     {
       company: "KeelWorks Foundation",
       role: "Full Stack Developer",
@@ -42,9 +58,6 @@ export const Experience = () => {
         { name: "React", icon: <SiReact color="#61DAFB" /> },
         { name: "Node.js", icon: <SiNodedotjs color="#339933" /> },
         { name: "Express.js", icon: <SiExpress color="#ffffff" /> },
-        { name: "REST API", icon: <SiPostman color="#FF6C37" /> },
-        { name: "JWT", icon: <SiJsonwebtokens color="#D63AFF" /> },
-        { name: "Axios", icon: <SiAxios color="#5A29E4" /> },
         { name: "MongoDB", icon: <SiMongodb color="#47A248" /> },
       ],
     },
@@ -61,18 +74,8 @@ export const Experience = () => {
         { name: "Redux", icon: <SiRedux color="#764ABC" /> },
         { name: "Node.js", icon: <SiNodedotjs color="#339933" /> },
         { name: "Express.js", icon: <SiExpress color="#ffffff" /> },
-        { name: "REST API", icon: <SiPostman color="#FF6C37" /> },
         { name: "MongoDB", icon: <SiMongodb color="#47A248" /> },
       ],
-    },
-    {
-      company: "Woolworths",
-      role: "Department Coordinator",
-      period: "June 2016 - May 2021",
-      location: "South Africa",
-      description:
-        "Led department operations in a high-pressure retail environment, consistently hitting organisational benchmarks through structured workflows and cross-functional collaboration.",
-      tech: [],
     },
   ];
 
