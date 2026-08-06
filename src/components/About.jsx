@@ -55,7 +55,7 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="py-12 md:py-24 bg-[#030712] px-6 lg:px-24 border-t border-white/5"
+      className="py-12 md:py-24 bg-white dark:bg-[#030712] px-6 lg:px-24 border-t border-black/5 dark:border-white/5"
     >
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col mb-10 md:mb-12">
@@ -63,7 +63,7 @@ export const About = () => {
             <span className="text-sky-500 font-mono text-xs tracking-[0.4em] uppercase">
               01_
             </span>
-            <h2 className="text-white font-black text-2xl md:text-4xl uppercase tracking-tighter">
+            <h2 className="text-slate-900 dark:text-white font-black text-2xl md:text-4xl uppercase tracking-tighter">
               About_Me
             </h2>
           </div>
@@ -72,18 +72,18 @@ export const About = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12 lg:gap-16 items-start">
           {/* LEFT SIDE: BIO TEXT */}
-          <div className="md:col-span-7 space-y-6 md:space-y-8 text-slate-400 text-base md:text-lg leading-relaxed font-light">
+          <div className="md:col-span-7 space-y-6 md:space-y-8 text-slate-600 dark:text-slate-400 text-base md:text-lg leading-relaxed font-light">
             <p>
               I'm a{" "}
-              <span className="text-white font-medium italic">
+              <span className="text-slate-900 dark:text-white font-medium italic">
                 Full Stack Developer
               </span>{" "}
               trained at{" "}
-              <span className="text-white font-medium underline decoration-sky-500/30">
+              <span className="text-slate-900 dark:text-white font-medium underline decoration-sky-500/30">
                 WeThinkCode_
               </span>{" "}
               and
-              <span className="text-white font-medium underline decoration-indigo-500/30">
+              <span className="text-slate-900 dark:text-white font-medium underline decoration-indigo-500/30">
                 {" "}
                 Zaio Institute of Technology
               </span>
@@ -95,22 +95,36 @@ export const About = () => {
             <p>
               What sets my work apart is the emphasis on reliability. I write
               tests, containerize with{" "}
-              <span className="text-indigo-400">Docker</span>, and ship through{" "}
-              <span className="text-sky-400">CI/CD pipelines</span>. Currently
-              based in <span className="text-white">Johannesburg</span> and
-              actively levelling up in cloud deployments, I bring a structured,
-              detail-oriented approach to every project I touch.
+              <span className="text-indigo-500 dark:text-indigo-400">
+                Docker
+              </span>
+              , and ship through{" "}
+              <span className="text-sky-500 dark:text-sky-400">
+                CI/CD pipelines
+              </span>
+              . Currently based in{" "}
+              <span className="text-slate-900 dark:text-white">
+                Johannesburg
+              </span>{" "}
+              and actively levelling up in cloud deployments, I bring a
+              structured, detail-oriented approach to every project I touch.
             </p>
             <p>
               Outside of work, I stay sharp through{" "}
-              <span className="text-sky-400">HackerRank</span> and{" "}
-              <span className="text-sky-400">Codewars</span>. I genuinely enjoy
-              the puzzle of algorithmic thinking. I keep up with the dev world
-              through tech news, podcasts and books, and I'm always picking up
-              something new. Right now that's{" "}
-              <span className="text-white font-medium italic">TypeScript</span>{" "}
+              <span className="text-sky-500 dark:text-sky-400">HackerRank</span>{" "}
               and{" "}
-              <span className="text-white font-medium italic">PostgreSQL</span>.
+              <span className="text-sky-500 dark:text-sky-400">Codewars</span>.
+              I genuinely enjoy the puzzle of algorithmic thinking. I keep up
+              with the dev world through tech news, podcasts and books, and I'm
+              always picking up something new. Right now that's{" "}
+              <span className="text-slate-900 dark:text-white font-medium italic">
+                TypeScript
+              </span>{" "}
+              and{" "}
+              <span className="text-slate-900 dark:text-white font-medium italic">
+                PostgreSQL
+              </span>
+              .
             </p>
           </div>
 
@@ -119,11 +133,11 @@ export const About = () => {
             {skills.map((skill, index) => (
               <div
                 key={index}
-                className="group p-5 bg-[#0f172a]/50 border border-white/5 hover:border-sky-500/30 transition-all duration-300"
+                className="group p-5 bg-slate-50 dark:bg-[#0f172a]/50 border border-black/5 dark:border-white/5 hover:border-sky-500/30 transition-all duration-300"
               >
                 <div className="flex items-center gap-3 mb-6">
                   <Terminal size={18} className="text-sky-500 shrink-0" />
-                  <h3 className="text-white font-bold text-xs uppercase tracking-[0.2em]">
+                  <h3 className="text-slate-900 dark:text-white font-bold text-xs uppercase tracking-[0.2em]">
                     {skill.category}
                   </h3>
                 </div>
@@ -136,12 +150,12 @@ export const About = () => {
                       className="flex flex-col items-center gap-2 group/icon transition-all"
                     >
                       <div className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 flex items-center justify-center">
-                        <span className="text-2xl sm:text-3xl md:text-4xl transition-transform duration-300 group-hover/icon:scale-110 drop-shadow-[0_0_10px_rgba(255,255,255,0.1)]">
+                        <span className="text-2xl sm:text-3xl md:text-4xl transition-transform duration-300 group-hover/icon:scale-110 drop-shadow-[0_0_10px_rgba(0,0,0,0.06)] dark:drop-shadow-[0_0_10px_rgba(255,255,255,0.1)]">
                           {item.icon}
                         </span>
                       </div>
 
-                      <span className="text-[7px] sm:text-[8px] md:text-[10px] font-mono text-slate-500 group-hover/icon:text-white transition-colors uppercase tracking-tighter text-center leading-tight min-h-[18px] flex items-center">
+                      <span className="text-[7px] sm:text-[8px] md:text-[10px] font-mono text-slate-500 group-hover/icon:text-slate-900 dark:group-hover/icon:text-white transition-colors uppercase tracking-tighter text-center leading-tight min-h-[18px] flex items-center">
                         {item.name}
                       </span>
                     </div>

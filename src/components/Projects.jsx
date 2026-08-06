@@ -52,7 +52,7 @@ export const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-12 md:py-20 bg-[#030712] px-6 lg:px-24 border-t border-white/5"
+      className="py-12 md:py-20 bg-white dark:bg-[#030712] px-6 lg:px-24 border-t border-black/5 dark:border-white/5"
     >
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col mb-12">
@@ -61,7 +61,7 @@ export const Projects = () => {
               04_
             </span>
             {/* Fluid Heading Fix: scale down for 294px screens */}
-            <h2 className="text-white font-black text-2xl md:text-3xl uppercase tracking-tighter">
+            <h2 className="text-slate-900 dark:text-white font-black text-2xl md:text-3xl uppercase tracking-tighter">
               Project_Archive
             </h2>
           </div>
@@ -72,9 +72,9 @@ export const Projects = () => {
           {projectsData.map((project, id) => (
             <div
               key={id}
-              className="group relative grid grid-cols-1 lg:grid-cols-12 gap-8 p-4 md:p-6 bg-[#0f172a]/30 border border-white/5 hover:border-sky-500/20 transition-all duration-500"
+              className="group relative grid grid-cols-1 lg:grid-cols-12 gap-8 p-4 md:p-6 bg-slate-50 dark:bg-[#0f172a]/30 border border-black/5 dark:border-white/5 hover:border-sky-500/20 transition-all duration-500"
             >
-              <div className="lg:col-span-5 aspect-video overflow-hidden border border-white/10 bg-[#030712]">
+              <div className="lg:col-span-5 aspect-video overflow-hidden border border-black/10 dark:border-white/10 bg-white dark:bg-[#030712]">
                 <img
                   src={`/assets/${project.imageSrc}`}
                   alt={project.title}
@@ -84,10 +84,10 @@ export const Projects = () => {
 
               <div className="lg:col-span-7 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-xl md:text-2xl font-black text-white uppercase tracking-tighter group-hover:text-sky-400 transition-colors mb-4">
+                  <h3 className="text-xl md:text-2xl font-black text-slate-900 dark:text-white uppercase tracking-tighter group-hover:text-sky-500 dark:group-hover:text-sky-400 transition-colors mb-4">
                     {project.title}
                   </h3>
-                  <p className="text-slate-400 text-sm md:text-base font-light leading-relaxed mb-6">
+                  <p className="text-slate-600 dark:text-slate-400 text-sm md:text-base font-light leading-relaxed mb-6">
                     {project.description}
                   </p>
 
@@ -103,7 +103,7 @@ export const Projects = () => {
                             <span className="w-2 h-2 bg-sky-500/50 rounded-full" />
                           )}
                         </span>
-                        <span className="text-[8px] md:text-[10px] font-mono text-slate-500 group-hover/skill:text-white transition-colors uppercase tracking-tighter text-center">
+                        <span className="text-[8px] md:text-[10px] font-mono text-slate-500 group-hover/skill:text-slate-900 dark:group-hover/skill:text-white transition-colors uppercase tracking-tighter text-center">
                           {skill}
                         </span>
                       </div>
@@ -117,7 +117,7 @@ export const Projects = () => {
                     href={project.source}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full sm:flex-1 flex items-center justify-center gap-2 py-3 bg-white text-black font-black text-xs uppercase tracking-widest hover:bg-sky-500 hover:text-white transition-all"
+                    className="w-full sm:flex-1 flex items-center justify-center gap-2 py-3 bg-slate-900 dark:bg-white text-white dark:text-black font-black text-xs uppercase tracking-widest hover:bg-sky-500 hover:text-white transition-all"
                   >
                     <SiGithub size={14} /> Code
                   </a>
@@ -125,7 +125,7 @@ export const Projects = () => {
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full sm:flex-1 flex items-center justify-center gap-2 py-3 border border-white/10 text-white font-black text-xs uppercase tracking-widest hover:border-sky-500 transition-all"
+                    className="w-full sm:flex-1 flex items-center justify-center gap-2 py-3 border border-black/10 dark:border-white/10 text-slate-900 dark:text-white font-black text-xs uppercase tracking-widest hover:border-sky-500 transition-all"
                   >
                     <ExternalLink size={14} /> Demo
                   </a>

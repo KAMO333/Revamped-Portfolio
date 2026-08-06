@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import { Menu, X, FileText } from "lucide-react";
+import { ThemeToggle } from "./ThemeToggle";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const links = ["About", "Experience", "Projects", "Contact"];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-[#030712]/90 backdrop-blur-xl border-b border-white/5 px-6 lg:px-20 py-5 flex justify-between items-center">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-white/90 dark:bg-[#030712]/90 backdrop-blur-xl border-b border-black/5 dark:border-white/5 px-6 lg:px-20 py-5 flex justify-between items-center">
       <a
         href="/"
-        className="text-xl font-black tracking-tighter text-white uppercase group"
+        className="text-xl font-black tracking-tighter text-slate-900 dark:text-white uppercase group"
       >
         portfolio
         <span className="text-sky-500 group-hover:text-green-400 transition-colors">
@@ -17,14 +18,13 @@ export const Navbar = () => {
         </span>
       </a>
 
-      {/* Desktop Menu */}
       <div className="hidden md:flex items-center gap-10">
         <ul className="flex items-center gap-10">
           {links.map((link) => (
             <li key={link}>
               <a
                 href={`#${link.toLowerCase()}`}
-                className="text-xs font-bold text-slate-400 hover:text-sky-400 transition-colors uppercase tracking-[0.2em]"
+                className="text-xs font-bold text-slate-600 dark:text-slate-400 hover:text-sky-400 transition-colors uppercase tracking-[0.2em]"
               >
                 {link}
               </a>
@@ -32,7 +32,8 @@ export const Navbar = () => {
           ))}
         </ul>
 
-        {/* MAIN DESKTOP RESUME BUTTON - UPDATED TO BLUE -> WHITE */}
+        <ThemeToggle />
+
         <a
           href="/assets/resume/Kamogelo_Mmopane_CV.pdf"
           target="_blank"
@@ -44,29 +45,29 @@ export const Navbar = () => {
         </a>
       </div>
 
-      {/* Mobile Toggle */}
-      <button
-        className="md:hidden text-white"
-        onClick={() => setMenuOpen(!menuOpen)}
-      >
-        {menuOpen ? <X size={28} /> : <Menu size={28} />}
-      </button>
+      <div className="md:hidden flex items-center gap-4">
+        <ThemeToggle />
+        <button
+          className="text-slate-900 dark:text-white"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+      </div>
 
-      {/* Mobile Menu */}
       {menuOpen && (
-        <div className="absolute top-full left-0 w-full bg-[#030712] border-b border-white/10 p-8 flex flex-col gap-8 md:hidden shadow-2xl animate-in fade-in slide-in-from-top-5">
+        <div className="absolute top-full left-0 w-full bg-white dark:bg-[#030712] border-b border-black/10 dark:border-white/10 p-8 flex flex-col gap-8 md:hidden shadow-2xl animate-in fade-in slide-in-from-top-5">
           {links.map((link) => (
             <a
               key={link}
               href={`#${link.toLowerCase()}`}
-              className="text-sm font-black uppercase tracking-widest text-slate-300"
+              className="text-sm font-black uppercase tracking-widest text-slate-700 dark:text-slate-300"
               onClick={() => setMenuOpen(false)}
             >
               {link}
             </a>
           ))}
 
-          {/* Mobile Menu RESUME Link */}
           <a
             href="/assets/resume/Kamogelo_Mmopane_CV.pdf"
             target="_blank"

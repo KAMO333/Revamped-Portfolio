@@ -1,5 +1,8 @@
+/* src/index.css */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap");
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --color-brand: #38bdf8;
@@ -18,11 +21,19 @@ body {
 }
 
 body {
-  background-color: #030712;
-  color: #f9fafb;
+  background-color: #ffffff;
+  color: #0f172a;
   font-family: var(--font-main);
   margin: 0;
   -webkit-font-smoothing: antialiased;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+html.dark body {
+  background-color: #030712;
+  color: #f9fafb;
 }
 
 * {
@@ -35,6 +46,9 @@ body {
   width: 5px;
 }
 ::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+html.dark ::-webkit-scrollbar-track {
   background: #030712;
 }
 ::-webkit-scrollbar-thumb {
