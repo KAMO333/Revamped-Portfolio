@@ -82,39 +82,26 @@ export const Experience = () => {
   const education = [
     {
       school: "WeThinkCode_",
-      qualification: "Occupational Certificate: Software Engineer",
+      qualification: "Occupational Certificate: Software Engineer (NQF 6)",
       period: "Sept 2024 - Dec 2025",
       details: (
         <p className="text-slate-600 dark:text-slate-400 text-sm font-light leading-relaxed ml-2 md:ml-6 max-w-md">
-          Learned{" "}
+          Mastered industrial-grade software engineering via an intensive
+          peer-to-peer curriculum. Programmed low-level{" "}
           <span className="text-sky-500 dark:text-sky-400 font-medium">
-            Python
-          </span>
-          ,{" "}
-          <span className="text-sky-500 dark:text-sky-400 font-medium">
-            Java
-          </span>
-          , and{" "}
+            client-server architectures
+          </span>{" "}
+          using network sockets, refactored raw procedural logic into strict{" "}
           <span className="text-slate-900 dark:text-white font-medium italic">
-            OOP
-          </span>{" "}
-          principles alongside{" "}
-          <span className="text-indigo-500 dark:text-indigo-400 font-medium">
-            SQL
-          </span>{" "}
-          databases and{" "}
-          <span className="text-indigo-500 dark:text-indigo-400 font-medium">
-            ORMs
+            OOP design patterns
           </span>
-          . I engineered full-stack solutions using{" "}
-          <span className="text-slate-900 dark:text-white font-medium">
-            Docker
+          , and implemented multi-user systems with thread-based concurrency.
+          Specialized in the{" "}
+          <span className="text-indigo-500 dark:text-indigo-400 font-medium">
+            Service-Oriented Architecture
           </span>{" "}
-          and{" "}
-          <span className="text-sky-500 dark:text-sky-400 font-medium">
-            CI/CD
-          </span>{" "}
-          pipelines.
+          elective, delivering distributed service decomposition and managing
+          asynchronous cross-service communication using message queues.
         </p>
       ),
       tech: [
@@ -133,31 +120,29 @@ export const Experience = () => {
     },
     {
       school: "Zaio Institute of Technology",
-      qualification: "Full Stack Web Development",
+      qualification: "Full Stack Web Development (Accredited)",
       period: "Feb 2022 - Nov 2023",
       details: (
         <p className="text-slate-600 dark:text-slate-400 text-sm font-light leading-relaxed ml-2 md:ml-6 max-w-md">
-          Developed responsive frontends with{" "}
+          Completed a comprehensive full-stack program focused on project-driven
+          engineering. Designed responsive client interfaces with{" "}
           <span className="text-sky-500 dark:text-sky-400 font-medium">
             React
-          </span>
-          ,{" "}
+          </span>{" "}
+          and managed strict immutable state data streams via{" "}
           <span className="text-indigo-500 dark:text-indigo-400 font-medium">
             Redux
           </span>
-          , and{" "}
-          <span className="text-slate-900 dark:text-white font-medium italic">
-            OOP
-          </span>{" "}
-          patterns. I architected scalable backends using{" "}
+          . Architected secure decoupled backends using{" "}
           <span className="text-green-600 dark:text-green-400 font-medium">
             Node.js
           </span>{" "}
-          and{" "}
+          and Express, implementing data normalization within NoSQL{" "}
           <span className="text-slate-900 dark:text-white font-medium">
-            Express
-          </span>
-          .
+            MongoDB
+          </span>{" "}
+          layers and deploying live production builds to cloud-hosted
+          environments.
         </p>
       ),
       tech: [
