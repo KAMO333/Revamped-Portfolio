@@ -62,24 +62,24 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="py-12 md:py-24 bg-white dark:bg-[#030712] px-6 lg:px-24 border-t border-black/5 dark:border-white/5"
+      className="py-16 md:py-24 bg-white dark:bg-[#030712] px-6 lg:px-24"
     >
       <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col mb-10 md:mb-12">
+        <div className="flex flex-col mb-12 md:mb-14">
           <div className="inline-flex items-center gap-2 mb-4">
             <span className="text-sky-500 font-mono text-xs tracking-[0.4em] uppercase">
               01_
             </span>
-            <h2 className="text-slate-900 dark:text-white font-black text-2xl md:text-4xl uppercase tracking-tighter">
+            <h2 className="text-slate-900 dark:text-white font-black text-2xl md:text-3xl uppercase tracking-tight">
               About_Me
             </h2>
           </div>
           <div className="h-[1px] w-full bg-gradient-to-r from-sky-500/50 to-transparent" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16 items-stretch">
           {/* LEFT SIDE: BIO TEXT */}
-          <div className="md:col-span-7 space-y-6 md:space-y-8 text-slate-600 dark:text-slate-400 text-base md:text-lg leading-relaxed font-light">
+          <div className="md:col-span-7 flex flex-col justify-between gap-6 text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed font-light">
             <p>
               I'm a{" "}
               <span className="text-slate-900 dark:text-white font-medium italic">
@@ -100,21 +100,20 @@ export const About = () => {
               </span>
               . At this elite institution, I mastered peer-to-peer software
               engineering, object-oriented programming, and brownfield codebase
-              navigation. Specializing in their Service-Oriented Architecture
-              elective, I gained deep expertise in service decomposition,
-              asynchronous communication, and cross-service communication via
-              message queues.
+              navigation, specializing in Service-Oriented Architecture —
+              service decomposition, asynchronous communication, and message
+              queues.
             </p>
 
             <p>
-              Today, I optimize my daily development workflow using AI tools to
-              write better code faster. I find immense fulfillment in showcasing
-              functional work to family and friends while currently upskilling
-              in relational data modeling with{" "}
+              Today, I optimize my daily workflow using AI tools to write better
+              code faster, and find fulfillment in showcasing functional work to
+              family and friends — while upskilling in relational data modeling
+              with{" "}
               <span className="text-slate-900 dark:text-white font-medium italic">
                 PostgreSQL
               </span>{" "}
-              and mastering cloud infrastructure deployment using{" "}
+              and cloud infrastructure deployment with{" "}
               <span className="text-slate-900 dark:text-white font-medium italic">
                 Azure
               </span>
@@ -123,7 +122,7 @@ export const About = () => {
           </div>
 
           {/* RIGHT SIDE: SKILLS GRID */}
-          <div className="md:col-span-5 flex flex-col gap-6 w-full">
+          <div className="md:col-span-5 flex flex-col justify-between gap-6 w-full">
             {skills.map((skill, index) => (
               <div
                 key={index}
