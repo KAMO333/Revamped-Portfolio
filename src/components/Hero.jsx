@@ -159,7 +159,6 @@ export const Hero = () => {
                 </p>
               </div>
             </div>
-
             <div className="absolute top-40 -right-6 md:-right-12 z-30 bg-white/95 dark:bg-[#0f172a]/95 border border-black/10 dark:border-white/10 p-3 shadow-2xl backdrop-blur-md hidden sm:block min-w-[130px] md:min-w-[150px]">
               <div className="flex flex-col gap-1">
                 <div className="flex items-center gap-2">
