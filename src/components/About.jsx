@@ -34,7 +34,14 @@ export const About = () => {
       category: "Backend & Databases",
       items: [
         { name: "Node.js", icon: <SiNodedotjs color="#339933" /> },
-        { name: "Express", icon: <SiExpress color="#ffffff" /> },
+        {
+          name: "Express.js",
+          icon: (
+            <span className="text-slate-900 dark:text-white">
+              <SiExpress />
+            </span>
+          ),
+        },
         { name: "PostgreSQL", icon: <SiPostgresql color="#4169E1" /> },
         { name: "MongoDB", icon: <SiMongodb color="#47A248" /> },
         { name: "Redis", icon: <SiRedis color="#DC382D" /> },
@@ -142,7 +149,7 @@ export const About = () => {
                         </span>
                       </div>
 
-                      <span className="text-[7px] sm:text-[8px] md:text-[10px] font-mono text-slate-500 group-hover/icon:text-slate-900 dark:group-hover/icon:text-white transition-colors uppercase tracking-tighter text-center leading-tight min-h-[18px] flex items-center">
+                      <span className="text-[7px] sm:text-[8px] md:text-[10px] font-mono text-slate-500 dark:text-slate-400 group-hover/icon:text-slate-900 dark:group-hover/icon:text-sky-400 transition-colors uppercase tracking-tighter text-center leading-tight min-h-[18px] flex items-center">
                         {item.name}
                       </span>
                     </div>

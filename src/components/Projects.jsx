@@ -26,7 +26,11 @@ const iconMap = {
   React: <SiReact color="#61DAFB" />,
   Node: <SiNodedotjs color="#339933" />,
   "Node.js": <SiNodedotjs color="#339933" />,
-  Express: <SiExpress color="#ffffff" />,
+  "Express.js": (
+    <span className="text-slate-900 dark:text-white">
+      <SiExpress />
+    </span>
+  ),
   MongoDB: <SiMongodb color="#47A248" />,
   TypeScript: <SiTypescript color="#3178C6" />,
   Docker: <SiDocker color="#2496ED" />,
@@ -103,7 +107,7 @@ export const Projects = () => {
                             <span className="w-2 h-2 bg-sky-500/50 rounded-full" />
                           )}
                         </span>
-                        <span className="text-[8px] md:text-[10px] font-mono text-slate-500 group-hover/skill:text-slate-900 dark:group-hover/skill:text-white transition-colors uppercase tracking-tighter text-center">
+                        <span className="text-[8px] md:text-[10px] font-mono text-slate-500 dark:text-slate-400 group-hover/skill:text-slate-900 dark:group-hover/skill:text-sky-400 transition-colors uppercase tracking-tighter text-center">
                           {skill}
                         </span>
                       </div>

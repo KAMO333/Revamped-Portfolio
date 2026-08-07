@@ -57,7 +57,15 @@ export const Experience = () => {
         { name: "JavaScript", icon: <SiJavascript color="#F7DF1E" /> },
         { name: "React", icon: <SiReact color="#61DAFB" /> },
         { name: "Node.js", icon: <SiNodedotjs color="#339933" /> },
-        { name: "Express.js", icon: <SiExpress color="#ffffff" /> },
+        {
+          name: "Express.js",
+          icon: (
+            <span className="text-slate-900 dark:text-white">
+              <SiExpress />
+            </span>
+          ),
+        },
+
         { name: "MongoDB", icon: <SiMongodb color="#47A248" /> },
       ],
     },
@@ -73,7 +81,14 @@ export const Experience = () => {
         { name: "React", icon: <SiReact color="#61DAFB" /> },
         { name: "Redux", icon: <SiRedux color="#764ABC" /> },
         { name: "Node.js", icon: <SiNodedotjs color="#339933" /> },
-        { name: "Express.js", icon: <SiExpress color="#ffffff" /> },
+        {
+          name: "Express.js",
+          icon: (
+            <span className="text-slate-900 dark:text-white">
+              <SiExpress />
+            </span>
+          ),
+        },
         { name: "MongoDB", icon: <SiMongodb color="#47A248" /> },
       ],
     },
@@ -151,7 +166,14 @@ export const Experience = () => {
         { name: "React", icon: <SiReact color="#61DAFB" /> },
         { name: "Redux", icon: <SiRedux color="#764ABC" /> },
         { name: "Node.js", icon: <SiNodedotjs color="#339933" /> },
-        { name: "Express", icon: <SiExpress color="#ffffff" /> },
+        {
+          name: "Express.js",
+          icon: (
+            <span className="text-slate-900 dark:text-white">
+              <SiExpress />
+            </span>
+          ),
+        },
         { name: "Firebase", icon: <SiFirebase color="#FFCA28" /> },
         { name: "MongoDB", icon: <SiMongodb color="#47A248" /> },
         { name: "Git", icon: <SiGit color="#F05032" /> },
@@ -215,7 +237,7 @@ export const Experience = () => {
                     <div className="transition-transform duration-300 group-hover/icon:-translate-y-1">
                       <span className="text-2xl md:text-4xl">{tool.icon}</span>
                     </div>
-                    <span className="text-[7px] md:text-[8px] font-mono text-slate-500 group-hover/icon:text-slate-900 dark:group-hover/icon:text-white uppercase text-center">
+                    <span className="text-[7px] md:text-[9px] font-mono text-slate-500 dark:text-slate-400 group-hover/icon:text-slate-900 dark:group-hover/icon:text-indigo-400 uppercase text-center">
                       {tool.name}
                     </span>
                   </div>
@@ -275,7 +297,7 @@ export const Experience = () => {
                         {tool.icon}
                       </span>
                     </div>
-                    <span className="text-[7px] font-mono text-slate-500 dark:text-slate-600 group-hover/icon:text-slate-900 dark:group-hover/icon:text-white uppercase tracking-tighter text-center">
+                    <span className="text-[9px] font-mono text-slate-500 dark:text-slate-400 group-hover/icon:text-slate-900 dark:group-hover/icon:text-indigo-400 uppercase tracking-tighter text-center">
                       {tool.name}
                     </span>
                   </div>
