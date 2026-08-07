@@ -38,7 +38,8 @@ export const Contact = () => {
               className="text-slate-500 group-hover:text-slate-900 dark:group-hover:text-white transition-colors"
               size={24}
             />
-            <span className="text-[10px] font-mono text-slate-500 group-hover:text-sky-500 dark:group-hover:text-sky-400 uppercase tracking-widest text-center">
+            <span className="text-[10px] font-mono text-slate-500 dark:text-slate-400 group-hover:text-sky-500 dark:group-hover:text-sky-400 uppercase tracking-widest text-center">
+              {" "}
               Email
             </span>
           </a>
@@ -54,7 +55,8 @@ export const Contact = () => {
               className="text-slate-500 group-hover:text-[#0077B5] transition-colors"
               size={24}
             />
-            <span className="text-[10px] font-mono text-slate-500 group-hover:text-indigo-500 dark:group-hover:text-indigo-400 uppercase tracking-widest text-center">
+            <span className="text-[10px] font-mono text-slate-500 dark:text-slate-400 group-hover:text-indigo-500 dark:group-hover:text-indigo-400 uppercase tracking-widest text-center">
+              {" "}
               LinkedIn
             </span>
           </a>
@@ -70,7 +72,7 @@ export const Contact = () => {
               className="text-slate-500 group-hover:text-slate-900 dark:group-hover:text-white transition-colors"
               size={24}
             />
-            <span className="text-[10px] font-mono text-slate-500 group-hover:text-slate-700 dark:group-hover:text-slate-300 uppercase tracking-widest text-center">
+            <span className="text-[10px] font-mono text-slate-500 dark:text-slate-400 group-hover:text-slate-700 dark:group-hover:text-slate-300 uppercase tracking-widest text-center">
               Github
             </span>
           </a>
@@ -79,13 +81,13 @@ export const Contact = () => {
 
       {/* FOOTER BOTTOM */}
       <div className="max-w-6xl mx-auto mt-16 md:mt-24 pt-8 border-t border-black/5 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-        <p className="text-slate-500 dark:text-slate-600 font-mono text-[9px] md:text-[10px] uppercase tracking-widest text-center md:text-left">
+        <p className="text-slate-500 dark:text-slate-400 font-mono text-[9px] md:text-[10px] uppercase tracking-widest text-center md:text-left">
           © 2026 Kamogelo Mmopane <br className="md:hidden" /> // Built with
           React & Tailwind
         </p>
         <div className="flex items-center gap-2">
           <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
-          <span className="text-slate-500 font-mono text-[9px] md:text-[10px] uppercase tracking-[0.2em]">
+          <span className="text-slate-500 dark:text-slate-400 font-mono text-[9px] md:text-[10px] uppercase tracking-[0.2em]">
             System_Online
           </span>
         </div>
