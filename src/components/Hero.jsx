@@ -150,7 +150,7 @@ export const Hero = () => {
                     className="text-sky-500 dark:text-sky-400"
                     size={16}
                   />
-                  <span className="text-[7px] md:text-[8px] font-mono text-slate-500 uppercase tracking-widest">
+                  <span className="text-[7px] md:text-[8px] font-mono text-slate-500 dark:text-slate-400 uppercase tracking-widest">
                     Stack_Focus
                   </span>
                 </div>
@@ -167,7 +167,7 @@ export const Hero = () => {
                     className="text-indigo-500 dark:text-indigo-400"
                     size={16}
                   />
-                  <span className="text-[7px] md:text-[8px] font-mono text-slate-500 uppercase tracking-widest">
+                  <span className="text-[7px] md:text-[8px] font-mono text-slate-500 dark:text-slate-400 uppercase tracking-widest">
                     Experience
                   </span>
                 </div>
