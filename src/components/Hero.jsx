@@ -46,18 +46,18 @@ export const Hero = () => {
   }, [displayText, deleting, roleIndex, roles]);
 
   return (
-    <section className="relative w-full flex items-center justify-center bg-white dark:bg-[#030712] px-6 sm:px-10 lg:px-16 overflow-hidden pt-32 pb-20 lg:pt-40 lg:pb-24">
-      {/* Background Decor */}
+    <section className="relative w-full flex items-center justify-center bg-white dark:bg-[#030712] px-6 sm:px-10 lg:px-16 overflow-hidden pt-28 pb-16 lg:pt-40 lg:pb-24">
+      {}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_20%_30%,rgba(56,189,248,0.05)_0%,transparent_50%)] dark:bg-[radial-gradient(circle_at_20%_30%,rgba(56,189,248,0.03)_0%,transparent_50%)]" />
         <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_80%_70%,rgba(99,102,241,0.05)_0%,transparent_50%)] dark:bg-[radial-gradient(circle_at_80%_70%,rgba(99,102,241,0.03)_0%,transparent_50%)]" />
       </div>
-      {/* Bottom fade: guarantees a clean, seamless handoff into the next section's flat background */}
+      {}
       <div className="absolute inset-x-0 bottom-0 h-20 z-[1] bg-gradient-to-b from-transparent to-white dark:to-[#030712] pointer-events-none" />
 
-      <div className="relative z-10 max-w-6xl mx-auto w-full flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
-        {/* Left Side: Content */}
-        <div className="w-full lg:w-1/2 space-y-5 text-center lg:text-left flex flex-col items-center lg:items-start">
+      <div className="relative z-10 max-w-6xl mx-auto w-full flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16">
+        {}
+        <div className="order-2 lg:order-1 w-full lg:w-1/2 space-y-4 text-center lg:text-left flex flex-col items-center lg:items-start">
           <div className="inline-flex items-center justify-center px-3 py-1 bg-green-500/5 border border-green-500/20">
             <span className="text-green-600 dark:text-green-400 text-[9px] font-mono tracking-[0.25em] uppercase font-bold leading-none">
               Status: Available to Work
@@ -129,8 +129,8 @@ export const Hero = () => {
           </div>
         </div>
 
-        {/* Right Side: Photo + stat row */}
-        <div className="w-full max-w-[220px] sm:max-w-[260px] lg:w-1/2 lg:max-w-[280px] flex flex-col items-center gap-4">
+        {}
+        <div className="order-1 lg:order-2 w-full max-w-[170px] sm:max-w-[220px] lg:w-1/2 lg:max-w-[280px] flex flex-col items-center gap-3 lg:gap-4">
           <div className="relative w-full aspect-[4/5] border border-black/10 dark:border-white/10 overflow-hidden">
             <img
               src="/assets/hero/heroImage.png"
@@ -139,7 +139,7 @@ export const Hero = () => {
             />
           </div>
 
-          {/* Stat row: quiet, no boxes/shadows/dividing lines — just two labels */}
+          {}
           <div className="w-full grid grid-cols-2 divide-x divide-black/10 dark:divide-white/10 pt-1">
             <div className="flex flex-col items-center gap-1 px-2">
               <div className="flex items-center gap-1.5">
