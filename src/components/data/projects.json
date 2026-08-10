@@ -2,10 +2,12 @@
   {
     "title": "Advanced Authentication System",
     "imageSrc": "projects/auth-system.png",
-    "description": "A production-grade authentication system with email verification, password recovery and protected routes.",
+    "description": "MFA authentication system with email verification, password recovery and protected routes.",
     "skills": [
+      "JavaScript",
       "TypeScript",
       "React",
+      "Tailwind CSS",
       "Node.js",
       "Express.js",
       "MongoDB",
@@ -25,7 +27,8 @@
       "Tailwind CSS",
       "Node.js",
       "Express.js",
-      "PostgreSQL"
+      "PostgreSQL",
+      "Supabase"
     ],
     "demo": "https://photo-gallery-7osi.vercel.app/",
     "source": "https://github.com/KAMO333/photo-gallery"
@@ -37,19 +40,22 @@
     "skills": [
       "JavaScript",
       "React",
+      "Tailwind CSS",
       "Node.js",
       "Express.js",
-      "MongoDB",
+      "PostgreSQL",
+      "Prisma",
       "Stripe",
       "Redis",
-      "Jest"
+      "Jest",
+      "Docker"
     ],
     "demo": "https://mern-e-commerce-e8hp.onrender.com/",
     "source": "https://github.com/KAMO333/mern-e-commerce"
   },
   {
     "title": "Expense Tracker",
-    "imageSrc": "projects/expense tracker.png",
+    "imageSrc": "projects/expenses.png",
     "description": "A full-stack expense tracking dashboard with real-time analytics powered by GraphQL.",
     "skills": [
       "JavaScript",
@@ -58,11 +64,21 @@
       "Node.js",
       "Express.js",
       "GraphQL",
-      "MongoDB",
-      "Jest"
+      "PostgreSQL",
+      "Prisma",
+      "Jest",
+      "Docker"
     ],
     "demo": "https://graphql-expenses-app-w0jd.onrender.com/login",
     "source": "https://github.com/KAMO333/GraphQL-expenses-app"
+  },
+  {
+    "title": "OCCI Network Cabling",
+    "imageSrc": "projects/occi.png",
+    "description": "A professional business website for an ICT infrastructure firm featuring an automated lead capture system with dual WhatsApp and email notifications to instantly route client inquiries.",
+    "skills": ["TypeScript", "Next.js", "Tailwind CSS"],
+    "demo": "https://www.occi.co.za/",
+    "source": "https://github.com/KAMO333/occi-website"
   },
   {
     "title": "Tic Tac Toe",

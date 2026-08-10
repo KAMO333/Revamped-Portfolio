@@ -20,10 +20,18 @@ import {
   SiGraphql,
   SiFirebase,
   SiSimpleicons,
+  SiSupabase,
+  SiPrisma,
+  SiNextdotjs,
 } from "react-icons/si";
 
 const iconMap = {
   React: <SiReact color="#61DAFB" />,
+  "Next.js": (
+    <span className="text-slate-900 dark:text-white">
+      <SiNextdotjs />
+    </span>
+  ),
   Node: <SiNodedotjs color="#339933" />,
   "Node.js": <SiNodedotjs color="#339933" />,
   "Express.js": (
@@ -50,6 +58,8 @@ const iconMap = {
   Firebase: <SiFirebase color="#FFCA28" />,
   "CI/CD": <SiGithubactions color="#2088FF" />,
   "GitHub Actions": <SiGithubactions color="#2088FF" />,
+  Supabase: <SiSupabase color="#31C48D" />,
+  Prisma: <SiPrisma color="#0C344B" />,
 };
 
 export const Projects = () => {
