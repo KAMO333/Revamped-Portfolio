@@ -1,70 +1,34 @@
-import React, { useState, useEffect } from "react";
-import { ArrowDown, Terminal, Cpu, Layout } from "lucide-react";
+import { useState } from "react";
+import { ArrowDown, Terminal, Cpu, Layout, Check, Copy } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const Hero = () => {
-  const [displayText, setDisplayText] = useState("");
-  const [roleIndex, setRoleIndex] = useState(0);
-  const [deleting, setDeleting] = useState(false);
-  const roles = [
-    "TypeScript",
-    "JavaScript",
-    "React",
-    "Redux",
-    "Tailwind CSS",
-    "Node.js",
-    "Express.js",
-    "PostgreSQL",
-    "MongoDB",
-    "Redis",
-    "Docker",
-    "Jest",
-    "Linux",
-    "Git",
-    "Claude AI",
-  ];
+  const [copied, setCopied] = useState(false);
 
-  useEffect(() => {
-    const current = roles[roleIndex];
-    const timeout = setTimeout(
-      () => {
-        if (!deleting) {
-          setDisplayText(current.slice(0, displayText.length + 1));
-          if (displayText.length === current.length)
-            setTimeout(() => setDeleting(true), 1500);
-        } else {
-          setDisplayText(current.slice(0, displayText.length - 1));
-          if (displayText.length === 0) {
-            setDeleting(false);
-            setRoleIndex((prev) => (prev + 1) % roles.length);
-          }
-        }
-      },
-      deleting ? 50 : 100,
-    );
-    return () => clearTimeout(timeout);
-  }, [displayText, deleting, roleIndex, roles]);
+  const handleCopyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText("kamosworkemail@gmail.com");
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      window.location.href = "mailto:kamosworkemail@gmail.com";
+    }
+  };
 
   return (
-    <section className="relative w-full flex items-center justify-center bg-white dark:bg-[#030712] px-6 sm:px-10 lg:px-16 overflow-hidden pt-28 pb-16 lg:pt-40 lg:pb-24">
-      {}
+    <section className="relative w-full flex items-center justify-center bg-white dark:bg-[#030712] px-6 sm:px-10 lg:px-16 overflow-hidden pt-28 pb-16 lg:pt-36 lg:pb-24">
+      {/* Background Ambient Glows */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_20%_30%,rgba(56,189,248,0.05)_0%,transparent_50%)] dark:bg-[radial-gradient(circle_at_20%_30%,rgba(56,189,248,0.03)_0%,transparent_50%)]" />
         <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_80%_70%,rgba(99,102,241,0.05)_0%,transparent_50%)] dark:bg-[radial-gradient(circle_at_80%_70%,rgba(99,102,241,0.03)_0%,transparent_50%)]" />
       </div>
-      {}
-      <div className="absolute inset-x-0 bottom-0 h-20 z-[1] bg-gradient-to-b from-transparent to-white dark:to-[#030712] pointer-events-none" />
 
-      <div className="relative z-10 max-w-6xl mx-auto w-full flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16">
-        {}
-        <div className="order-2 lg:order-1 w-full lg:w-1/2 space-y-4 text-center lg:text-left flex flex-col items-center lg:items-start">
-          <div className="inline-flex items-center justify-center px-3 py-1 bg-green-500/5 border border-green-500/20">
-            <span className="text-green-600 dark:text-green-400 text-[9px] font-mono tracking-[0.25em] uppercase font-bold leading-none">
-              Status: Available to Work
-            </span>
-          </div>
+      <div className="absolute inset-x-0 bottom-0 h-16 z-[1] bg-gradient-to-b from-transparent to-white dark:to-[#030712] pointer-events-none" />
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-black text-slate-900 dark:text-white tracking-tight leading-[0.95] uppercase">
+      <div className="relative z-10 max-w-6xl mx-auto w-full flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+        {/* Left Column: Bio & Actions */}
+        <div className="order-2 lg:order-1 w-full lg:w-3/5 text-center lg:text-left flex flex-col items-center lg:items-start">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-slate-900 dark:text-white tracking-tight leading-[0.95] uppercase">
             Kamogelo
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-blue-500 to-indigo-500 italic">
@@ -72,110 +36,125 @@ export const Hero = () => {
             </span>
           </h1>
 
-          <div className="flex items-center justify-center lg:justify-start gap-2.5 text-base md:text-lg font-mono text-slate-900 dark:text-white min-h-[1.75rem]">
-            <span className="text-sky-500 font-bold">&gt;</span>
-            <span className="font-bold uppercase tracking-tight">
-              {displayText}
-            </span>
-            <span className="w-1.5 h-5 bg-sky-500 animate-pulse" />
-          </div>
-
-          <p className="text-slate-600 dark:text-slate-400 text-sm md:text-base max-w-md leading-relaxed font-light border-l-2 border-slate-300 dark:border-slate-800 pl-5 text-left mx-auto lg:mx-0">
-            Full Stack Engineer with 2 years of professional experience
-            specializing in
-            <span className="text-slate-900 dark:text-white font-medium italic">
-              {" "}
-              TypeScript
-            </span>
-            , building modular component-driven UIs with
-            <span className="text-slate-900 dark:text-white font-medium italic">
-              {" "}
-              React
-            </span>
-            , and containerized event-driven RESTful APIs with
-            <span className="text-slate-900 dark:text-white font-medium italic">
-              {" "}
+          {/* Cleaned Bio Statement with refined typography */}
+          <p className="mt-6 mb-8 text-slate-600 dark:text-slate-300 text-sm md:text-base leading-relaxed font-light border-l-2 border-sky-500/50 pl-4 max-w-lg text-left text-pretty">
+            Full-Stack Software Developer with 2+ years of production experience
+            building high-scale web platforms. Specialized in{" "}
+            <strong className="font-semibold text-slate-900 dark:text-white">
+              React, TypeScript
+            </strong>
+            , and{" "}
+            <strong className="font-semibold text-slate-900 dark:text-white">
               Node.js
-            </span>
-            .
+            </strong>{" "}
+            with{" "}
+            <strong className="font-semibold text-slate-900 dark:text-white">
+              PostgreSQL
+            </strong>{" "}
+            relational databases, robust unit testing, and Docker
+            containerization.
           </p>
 
-          <div className="flex flex-wrap justify-center lg:justify-start items-center gap-6 pt-1">
+          {/* Action Row */}
+          <div className="flex flex-wrap justify-center lg:justify-start items-center gap-3 w-full sm:w-auto">
             <a
               href="#projects"
-              className="inline-flex items-center gap-2.5 px-5 py-2.5 bg-sky-500 text-black font-black text-[10px] tracking-[0.25em] border border-sky-400 hover:bg-white hover:text-black hover:border-white transition-colors duration-300 uppercase active:scale-95"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-sky-500 text-black font-black text-xs uppercase tracking-widest border border-sky-400 hover:bg-white hover:text-black hover:border-white transition-all duration-300 shadow-[0_0_20px_rgba(14,165,233,0.2)] active:scale-95"
             >
               VIEW_PROJECTS <Layout size={13} className="opacity-80" />
             </a>
 
-            <div className="flex items-center gap-5">
+            <button
+              onClick={handleCopyEmail}
+              aria-label="Copy email address"
+              className="inline-flex items-center gap-2 px-4 py-2.5 bg-slate-50 dark:bg-white/5 text-slate-700 dark:text-slate-300 font-mono text-xs uppercase tracking-wider border border-black/10 dark:border-white/10 hover:border-sky-500/50 hover:text-sky-500 transition-all duration-300 active:scale-95"
+            >
+              {copied ? (
+                <>
+                  <Check size={13} className="text-green-500" />
+                  <span className="text-green-600 dark:text-green-400 font-bold">
+                    COPIED
+                  </span>
+                </>
+              ) : (
+                <>
+                  <Copy size={13} className="opacity-60" />
+                  <span>COPY_EMAIL</span>
+                </>
+              )}
+            </button>
+
+            {/* Social Icons */}
+            <div className="flex items-center gap-3 pl-2">
               <a
                 href="https://github.com/KAMO333"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-slate-400 dark:text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors"
+                aria-label="GitHub Profile"
+                className="p-2 text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors"
               >
-                <FaGithub size={20} />
+                <FaGithub size={19} />
               </a>
               <a
                 href="https://www.linkedin.com/in/kamogelommopane/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-slate-400 dark:text-slate-500 hover:text-sky-500 dark:hover:text-sky-400 transition-colors"
+                aria-label="LinkedIn Profile"
+                className="p-2 text-slate-400 hover:text-sky-500 dark:hover:text-sky-400 transition-colors"
               >
-                <FaLinkedin size={20} />
+                <FaLinkedin size={19} />
               </a>
             </div>
           </div>
         </div>
 
-        {}
-        <div className="order-1 lg:order-2 w-full max-w-[170px] sm:max-w-[220px] lg:w-1/2 lg:max-w-[280px] flex flex-col items-center gap-3 lg:gap-4">
-          <div className="relative w-full aspect-[4/5] border border-black/10 dark:border-white/10 overflow-hidden">
+        {/* Right Column: Profile Image & Stats */}
+        <div className="order-1 lg:order-2 w-full max-w-[220px] sm:max-w-[250px] lg:max-w-[280px] flex flex-col items-center">
+          <div className="relative w-full aspect-[4/5] border border-black/10 dark:border-white/10 bg-slate-100 dark:bg-white/5 overflow-hidden">
             <img
               src="/assets/hero/heroImage.png"
-              alt="Kamogelo"
+              alt="Kamogelo Mmopane"
               className="w-full h-full object-cover"
             />
           </div>
 
-          {}
-          <div className="w-full grid grid-cols-2 divide-x divide-black/10 dark:divide-white/10 pt-1">
-            <div className="flex flex-col items-center gap-1 px-2">
-              <div className="flex items-center gap-1.5">
-                <Terminal
-                  size={12}
-                  className="text-sky-500 dark:text-sky-400"
-                />
-                <span className="text-[7px] font-mono text-slate-500 dark:text-slate-400 uppercase tracking-widest">
-                  Stack_Focus
+          {/* Minimalist Stats Underneath Image */}
+          <div className="w-full grid grid-cols-2 divide-x divide-black/10 dark:divide-white/10 border-x border-b border-black/10 dark:border-white/10 py-2.5 bg-slate-50/50 dark:bg-white/[0.02]">
+            <div className="flex flex-col items-center text-center px-2">
+              <div className="flex items-center gap-1.5 text-sky-500 dark:text-sky-400">
+                <Terminal size={11} />
+                <span className="text-[8px] font-mono uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                  Core_Focus
                 </span>
               </div>
-              <p className="text-slate-900 dark:text-white font-black text-[10px] uppercase tracking-tight">
-                MERN Stack
+              <p className="text-slate-900 dark:text-white font-bold text-[10px] uppercase tracking-tight mt-0.5">
+                Full Stack
               </p>
             </div>
-            <div className="flex flex-col items-center gap-1 px-2">
-              <div className="flex items-center gap-1.5">
-                <Cpu
-                  size={12}
-                  className="text-indigo-500 dark:text-indigo-400"
-                />
-                <span className="text-[7px] font-mono text-slate-500 dark:text-slate-400 uppercase tracking-widest">
-                  Experience
+
+            <div className="flex flex-col items-center text-center px-2">
+              <div className="flex items-center gap-1.5 text-indigo-500 dark:text-indigo-400">
+                <Cpu size={11} />
+                <span className="text-[8px] font-mono uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                  Background
                 </span>
               </div>
-              <p className="text-slate-900 dark:text-white font-black text-[10px] uppercase tracking-tight">
-                2 Years Exp
+              <p className="text-slate-900 dark:text-white font-bold text-[10px] uppercase tracking-tight mt-0.5">
+                WeThinkCode_
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-sky-500 dark:text-sky-400 animate-bounce hidden lg:block">
-        <a href="#about">
-          <ArrowDown size={22} />
+      {/* Down Scroll Indicator */}
+      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 text-slate-400 hover:text-sky-500 dark:hover:text-sky-400 transition-colors hidden lg:block">
+        <a
+          href="#about"
+          aria-label="Scroll to About section"
+          className="p-1 inline-block animate-bounce"
+        >
+          <ArrowDown size={18} />
         </a>
       </div>
     </section>

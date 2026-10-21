@@ -13,7 +13,7 @@ export const Navbar = () => {
           href="/"
           className="text-xl font-black tracking-tighter text-slate-900 dark:text-white uppercase group"
         >
-          portfolio
+          kamogelo
           <span className="text-sky-500 group-hover:text-green-400 transition-colors">
             .dev
           </span>
