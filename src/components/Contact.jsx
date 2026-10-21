@@ -14,16 +14,13 @@ export const Contact = () => {
         {/* TEXT CONTENT */}
         <div className="text-center md:text-left">
           <div className="inline-flex items-center gap-2 mb-4">
-            <span className="text-sky-500 font-mono text-xs tracking-[0.4em] uppercase">
-              05_
-            </span>
             <h2 className="text-slate-900 dark:text-white font-black text-xl sm:text-2xl md:text-4xl uppercase tracking-tighter whitespace-nowrap md:whitespace-normal">
-              Contact_Terminal
+              Contact
             </h2>
           </div>
           <p className="text-slate-600 dark:text-slate-400 text-sm md:text-lg font-light leading-relaxed max-w-md mx-auto md:mx-0">
-            System ready for new connections. Feel free to reach out for
-            collaborations or opportunities.
+            Open to full-time roles and freelance projects. Email me and I’ll
+            reply within 48 hours.
           </p>
         </div>
 
@@ -82,15 +79,9 @@ export const Contact = () => {
       {/* FOOTER BOTTOM */}
       <div className="max-w-6xl mx-auto mt-16 md:mt-24 pt-8 border-t border-black/5 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
         <p className="text-slate-500 dark:text-slate-400 font-mono text-[9px] md:text-[10px] uppercase tracking-widest text-center md:text-left">
-          © 2026 Kamogelo Mmopane <br className="md:hidden" /> // Built with
-          React & Tailwind
+          © 2026 Kamogelo Mmopane <br className="md:hidden" /> // Built with ❤️
+          & React with Tailwind
         </p>
-        <div className="flex items-center gap-2">
-          <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
-          <span className="text-slate-500 dark:text-slate-400 font-mono text-[9px] md:text-[10px] uppercase tracking-[0.2em]">
-            System_Online
-          </span>
-        </div>
       </div>
     </footer>
   );

@@ -4,7 +4,7 @@ import { ThemeToggle } from "./ThemeToggle";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const links = ["About", "Experience", "Projects", "Contact"];
+  const links = ["About", "Skills", "Experience", "Projects", "Contact"];
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white/90 dark:bg-[#030712]/90 backdrop-blur-xl border-b border-black/5 dark:border-white/5">
@@ -19,7 +19,7 @@ export const Navbar = () => {
           </span>
         </a>
 
-        <div className="hidden md:flex items-center gap-10">
+        <div className="hidden xl:flex items-center gap-10">
           <ul className="flex items-center gap-10">
             {links.map((link) => (
               <li key={link}>
@@ -42,11 +42,11 @@ export const Navbar = () => {
             className="flex items-center gap-2 px-6 py-2.5 bg-sky-500 text-black font-black text-[10px] uppercase tracking-[0.2em] border border-sky-400 hover:bg-white hover:text-black hover:border-white transition-all duration-300 shadow-[0_0_20px_rgba(14,165,233,0.3)] active:scale-95"
           >
             <FileText size={12} />
-            Resume_Access
+            Download CV
           </a>
         </div>
 
-        <div className="md:hidden flex items-center gap-4">
+        <div className="xl:hidden flex items-center gap-4">
           <ThemeToggle />
           <button
             className="text-slate-900 dark:text-white"
@@ -62,7 +62,7 @@ export const Navbar = () => {
           since the nav itself is fixed — this keeps the dropdown simple
           and immune to overflow/clipping issues at any width. */}
       {menuOpen && (
-        <div className="w-full bg-white dark:bg-[#030712] border-t border-black/5 dark:border-white/5 p-8 flex flex-col gap-8 md:hidden shadow-2xl">
+        <div className="w-full bg-white dark:bg-[#030712] border-t border-black/5 dark:border-white/5 p-8 flex flex-col gap-8 xl:hidden shadow-2xl max-h-[calc(100dvh-5rem)] overflow-y-auto">
           {links.map((link) => (
             <a
               key={link}

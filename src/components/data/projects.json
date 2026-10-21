@@ -1,5 +1,33 @@
 [
   {
+    "title": "OCCI Network Cabling",
+    "imageSrc": "projects/occi.png",
+    "description": "A professional business website for an ICT infrastructure firm featuring an automated lead capture system with dual WhatsApp and email notifications to instantly route client inquiries.",
+    "skills": ["TypeScript", "Next.js", "Tailwind CSS"],
+    "demo": "https://www.occi.co.za/",
+    "source": "https://github.com/KAMO333/occi-website"
+  },
+  {
+    "title": "E-Commerce",
+    "imageSrc": "projects/e-commerce.png",
+    "description": "A full-stack online store with product management, cart functionality and Stripe payment processing.",
+    "skills": [
+      "JavaScript",
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Prisma",
+      "Stripe",
+      "Redis",
+      "Jest",
+      "Docker"
+    ],
+    "demo": "https://mern-e-commerce-e8hp.onrender.com/",
+    "source": "https://github.com/KAMO333/mern-e-commerce"
+  },
+  {
     "title": "Advanced Authentication System",
     "imageSrc": "projects/auth-system.png",
     "description": "MFA authentication system with email verification, password recovery and protected routes.",
@@ -34,26 +62,6 @@
     "source": "https://github.com/KAMO333/photo-gallery"
   },
   {
-    "title": "E-Commerce",
-    "imageSrc": "projects/e-commerce.png",
-    "description": "A full-stack online store with product management, cart functionality and Stripe payment processing.",
-    "skills": [
-      "JavaScript",
-      "React",
-      "Tailwind CSS",
-      "Node.js",
-      "Express.js",
-      "PostgreSQL",
-      "Prisma",
-      "Stripe",
-      "Redis",
-      "Jest",
-      "Docker"
-    ],
-    "demo": "https://mern-e-commerce-e8hp.onrender.com/",
-    "source": "https://github.com/KAMO333/mern-e-commerce"
-  },
-  {
     "title": "Expense Tracker",
     "imageSrc": "projects/expenses.png",
     "description": "A full-stack expense tracking dashboard with real-time analytics powered by GraphQL.",
@@ -71,29 +79,5 @@
     ],
     "demo": "https://graphql-expenses-app-w0jd.onrender.com/login",
     "source": "https://github.com/KAMO333/GraphQL-expenses-app"
-  },
-  {
-    "title": "OCCI Network Cabling",
-    "imageSrc": "projects/occi.png",
-    "description": "A professional business website for an ICT infrastructure firm featuring an automated lead capture system with dual WhatsApp and email notifications to instantly route client inquiries.",
-    "skills": ["TypeScript", "Next.js", "Tailwind CSS"],
-    "demo": "https://www.occi.co.za/",
-    "source": "https://github.com/KAMO333/occi-website"
-  },
-  {
-    "title": "Tic Tac Toe",
-    "imageSrc": "projects/tictactoe.png",
-    "description": "A multiplayer browser game with score tracking and lofi music.",
-    "skills": ["JavaScript", "React", "Jest"],
-    "demo": "https://tictactoe-by-kamo.netlify.app/",
-    "source": "https://github.com/KAMO333/tic-tac-toe-game"
-  },
-  {
-    "title": "myTunes",
-    "imageSrc": "projects/mytunes.png",
-    "description": "Music website that features top House DJs",
-    "skills": ["JavaScript", "HTML5", "CSS3", "Jest"],
-    "demo": "https://mytunewebsite.netlify.app/",
-    "source": "https://github.com/KAMO333/myTunes-"
   }
 ]

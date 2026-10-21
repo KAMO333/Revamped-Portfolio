@@ -3,6 +3,7 @@ import { Hero } from "./components/Hero";
 import { About } from "./components/About";
 import { Experience } from "./components/Experience";
 import { Projects } from "./components/Projects";
+import { Skills } from "./components/Skills";
 import { Contact } from "./components/Contact";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Skills />
         <Experience />
         <Projects />
         <Contact />

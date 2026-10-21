@@ -34,7 +34,7 @@ export const Experience = () => {
   const experiences = [
     {
       company: "Powerverse",
-      role: "Junior Front-End Developer",
+      role: "Front-End Developer",
       period: "May 2026 - Present",
       location: "South Africa (Hybrid)",
       description:
@@ -189,22 +189,17 @@ export const Experience = () => {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col mb-10">
           <div className="inline-flex items-center gap-2 mb-4">
-            <span className="text-sky-500 font-mono text-xs tracking-[0.4em] uppercase">
-              02_
-            </span>
             <h2 className="text-slate-900 dark:text-white font-black text-2xl md:text-3xl uppercase tracking-tighter">
-              Work_History
+              Work History
             </h2>
           </div>
           <div className="h-[1px] w-full bg-gradient-to-r from-sky-500/50 to-transparent" />
         </div>
 
-        {/* Timeline margin fix for mobile: ml-2 on mobile, ml-0 on desktop */}
-        <div className="relative border-l border-black/10 dark:border-white/10 ml-2 md:ml-0 mb-20">
+        {/* Work items container - dots and indent removed */}
+        <div className="mb-20">
           {experiences.map((exp, index) => (
-            <div key={index} className="mb-12 ml-6 md:ml-8 relative group">
-              {/* Dot alignment fix: -left-[25px] on mobile */}
-              <div className="absolute -left-[25px] md:-left-[33px] top-1.5 w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-transparent border-2 border-sky-500 group-hover:bg-sky-500 transition-all duration-300" />
+            <div key={index} className="mb-12 relative group">
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
                 <div>
                   <h3 className="text-lg md:text-xl font-black text-slate-900 dark:text-white uppercase tracking-tight">
@@ -249,9 +244,6 @@ export const Experience = () => {
 
         <div className="flex flex-col mb-10 pt-10 border-t border-black/5 dark:border-white/5">
           <div className="inline-flex items-center gap-2 mb-4">
-            <span className="text-indigo-500 font-mono text-xs tracking-[0.4em] uppercase">
-              03_
-            </span>
             <h2 className="text-slate-900 dark:text-white font-black text-2xl md:text-3xl uppercase tracking-tighter">
               Education
             </h2>

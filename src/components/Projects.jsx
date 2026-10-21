@@ -69,19 +69,17 @@ export const Projects = () => {
       className="py-12 md:py-20 bg-white dark:bg-[#030712] px-6 lg:px-24 border-t border-black/5 dark:border-white/5"
     >
       <div className="max-w-6xl mx-auto">
+        {/* Section Header */}
         <div className="flex flex-col mb-12">
           <div className="inline-flex items-center gap-2 mb-4">
-            <span className="text-sky-500 font-mono text-xs tracking-[0.4em] uppercase">
-              04_
-            </span>
-            {/* Fluid Heading Fix: scale down for 294px screens */}
             <h2 className="text-slate-900 dark:text-white font-black text-2xl md:text-3xl uppercase tracking-tighter">
-              Project_Archive
+              Selected work
             </h2>
           </div>
           <div className="h-[1px] w-full bg-gradient-to-r from-sky-500/50 to-transparent" />
         </div>
 
+        {/* Projects List */}
         <div className="grid grid-cols-1 gap-12 md:gap-16">
           {projectsData.map((project, id) => (
             <div
@@ -105,7 +103,6 @@ export const Projects = () => {
                     {project.description}
                   </p>
 
-                  {/* Skills Grid Fix: 4 columns on tiny mobile ensures no overflow */}
                   <div className="grid grid-cols-4 sm:flex sm:flex-wrap gap-x-4 gap-y-6 md:gap-x-10 md:gap-y-6 mb-8">
                     {project.skills.map((skill, index) => (
                       <div
@@ -125,13 +122,12 @@ export const Projects = () => {
                   </div>
                 </div>
 
-                {/* Buttons Fix: Stack vertically on very small mobile for easier tapping */}
                 <div className="flex flex-col sm:flex-row items-center gap-4">
                   <a
                     href={project.source}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full sm:flex-1 flex items-center justify-center gap-2 py-3 bg-slate-900 dark:bg-white text-white dark:text-black font-black text-xs uppercase tracking-widest hover:bg-sky-500 hover:text-white transition-all"
+                    className="w-full sm:flex-1 flex items-center justify-center gap-2 py-3 border border-black/10 dark:border-white/10 text-slate-900 dark:text-white font-black text-xs uppercase tracking-widest hover:border-sky-500 transition-all"
                   >
                     <SiGithub size={14} /> Code
                   </a>
@@ -139,14 +135,36 @@ export const Projects = () => {
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full sm:flex-1 flex items-center justify-center gap-2 py-3 border border-black/10 dark:border-white/10 text-slate-900 dark:text-white font-black text-xs uppercase tracking-widest hover:border-sky-500 transition-all"
+                    className="w-full sm:flex-1 flex items-center justify-center gap-2 py-3 bg-sky-500 text-white font-black text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all"
                   >
-                    <ExternalLink size={14} /> Demo
+                    <ExternalLink size={14} /> Live Site
                   </a>
                 </div>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* More on GitHub Callout */}
+        <div className="mt-16 pt-10 border-t border-black/5 dark:border-white/5 flex flex-col sm:flex-row items-center justify-between gap-6 p-6 sm:p-8 bg-slate-50/70 dark:bg-[#0f172a]/30 border border-black/10 dark:border-white/10">
+          <div className="text-center sm:text-left space-y-1">
+            <p className="text-slate-700 dark:text-slate-300 text-sm font-light">
+              Looking for earlier experiments, scripts, or open-source
+              repositories?
+            </p>
+          </div>
+
+          <a
+            href="https://github.com/KAMO333"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View more projects on GitHub (opens in a new tab)"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3 bg-sky-500 text-white font-black text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 active:scale-95 shadow-sm whitespace-nowrap"
+          >
+            <SiGithub size={15} />
+            More_On_GitHub
+            <ExternalLink size={13} className="opacity-70" />
+          </a>
         </div>
       </div>
     </section>
