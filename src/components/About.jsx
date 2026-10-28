@@ -2,7 +2,7 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center py-12 md:py-20 bg-white dark:bg-[#030712] px-6 lg:px-24 border-t border-black/5 dark:border-white/5"
+      className="min-h-screen flex items-center py-12 md:py-20 bg-white dark:bg-[#030712] px-6 lg:px-24"
     >
       <div className="w-full max-w-6xl mx-auto">
         {/* Section Header */}

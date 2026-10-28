@@ -5,7 +5,7 @@ export const Contact = () => {
   return (
     <footer
       id="contact"
-      className="py-16 md:py-24 bg-white dark:bg-[#030712] px-6 lg:px-24 border-t border-black/5 dark:border-white/5 relative overflow-hidden"
+      className="py-16 md:py-24 bg-white dark:bg-[#030712] px-6 lg:px-24 relative overflow-hidden"
     >
       {/* Background Decorative Element */}
       <div className="absolute top-0 right-0 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-sky-500/5 blur-[100px] md:blur-[120px] rounded-full -mr-32 -mt-32 md:-mr-64 md:-mt-64 pointer-events-none" />
@@ -77,7 +77,7 @@ export const Contact = () => {
       </div>
 
       {/* FOOTER BOTTOM */}
-      <div className="max-w-6xl mx-auto mt-16 md:mt-24 pt-8 border-t border-black/5 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div className="max-w-6xl mx-auto mt-16 md:mt-24 pt-8flex flex-col md:flex-row justify-between items-center gap-6">
         <p className="text-slate-500 dark:text-slate-400 font-mono text-[9px] md:text-[10px] uppercase tracking-widest text-center md:text-left">
           © 2026 Kamogelo Mmopane <br className="md:hidden" /> // Built with ❤️
           & React with Tailwind

@@ -1,18 +1,10 @@
+import { Calendar, MapPin, Database, Boxes } from "lucide-react";
 import {
-  Calendar,
-  MapPin,
-  GraduationCap,
-  Terminal,
-  Database,
-  Boxes,
-  Workflow,
-} from "lucide-react";
-import {
+  SiHtml5,
+  SiCss,
   SiReact,
   SiNodedotjs,
   SiMongodb,
-  SiJsonwebtokens,
-  SiAxios,
   SiRedux,
   SiExpress,
   SiPython,
@@ -23,8 +15,6 @@ import {
   SiJavascript,
   SiTailwindcss,
   SiTypescript,
-  SiPostman,
-  SiHtml5,
   SiGit,
   SiFirebase,
   SiTestinglibrary,
@@ -71,7 +61,7 @@ export const Experience = () => {
     },
     {
       company: "Zaio Institute of Technology",
-      role: "Full Stack Developer (Internship)",
+      role: "Full Stack Developer",
       period: "June 2022 - July 2023",
       location: "South Africa",
       description:
@@ -127,7 +117,8 @@ export const Experience = () => {
         { name: "ORM", icon: <Database size={22} color="#10b981" /> },
         { name: "TDD", icon: <SiTestinglibrary color="#E33332" /> },
         { name: "Git", icon: <SiGit color="#F05032" /> },
-        { name: "HTML5/CSS3", icon: <SiHtml5 color="#E34F26" /> },
+        { name: "HTML5", icon: <SiHtml5 color="#E34F26" /> },
+        { name: "CSS3", icon: <SiCss color="#1572B6" /> },
         { name: "JavaScript", icon: <SiJavascript color="#F7DF1E" /> },
         { name: "Docker", icon: <SiDocker color="#2496ED" /> },
         { name: "Linux", icon: <SiLinux color="#FCC624" /> },
@@ -161,7 +152,8 @@ export const Experience = () => {
         </p>
       ),
       tech: [
-        { name: "HTML/CSS", icon: <SiHtml5 color="#E34F26" /> },
+        { name: "HTML5", icon: <SiHtml5 color="#E34F26" /> },
+        { name: "CSS3", icon: <SiCss color="#1572B6" /> },
         { name: "JavaScript", icon: <SiJavascript color="#F7DF1E" /> },
         { name: "React", icon: <SiReact color="#61DAFB" /> },
         { name: "Redux", icon: <SiRedux color="#764ABC" /> },
@@ -184,7 +176,7 @@ export const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-12 bg-white dark:bg-[#030712] px-6 lg:px-24 border-t border-black/5 dark:border-white/5"
+      className="py-12 bg-white dark:bg-[#030712] px-6 lg:px-24"
     >
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col mb-10">
@@ -242,7 +234,7 @@ export const Experience = () => {
           ))}
         </div>
 
-        <div className="flex flex-col mb-10 pt-10 border-t border-black/5 dark:border-white/5">
+        <div className="flex flex-col mb-10 pt-10">
           <div className="inline-flex items-center gap-2 mb-4">
             <h2 className="text-slate-900 dark:text-white font-black text-2xl md:text-3xl uppercase tracking-tighter">
               Education

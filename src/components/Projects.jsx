@@ -66,7 +66,7 @@ export const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-12 md:py-20 bg-white dark:bg-[#030712] px-6 lg:px-24 border-t border-black/5 dark:border-white/5"
+      className="py-12 md:py-20 bg-white dark:bg-[#030712] px-6 lg:px-24"
     >
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
