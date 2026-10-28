@@ -4,11 +4,12 @@ import { ThemeToggle } from "./ThemeToggle";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const links = ["About", "Skills", "Experience", "Projects", "Contact"];
+  const links = ["About", "Experience", "Projects", "Contact"];
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white/90 dark:bg-[#030712]/90 backdrop-blur-xl border-b border-black/5 dark:border-white/5">
-      <div className="max-w-7xl mx-auto px-6 lg:px-20 py-5 flex justify-between items-center">
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-20 py-5 flex justify-between items-center">
+        {/* Left: Brand */}
         <a
           href="/"
           className="text-xl font-black tracking-tighter text-slate-900 dark:text-white uppercase group"
@@ -19,20 +20,22 @@ export const Navbar = () => {
           </span>
         </a>
 
-        <div className="hidden xl:flex items-center gap-10">
-          <ul className="flex items-center gap-10">
-            {links.map((link) => (
-              <li key={link}>
-                <a
-                  href={`#${link.toLowerCase()}`}
-                  className="text-xs font-bold text-slate-600 dark:text-slate-400 hover:text-sky-400 transition-colors uppercase tracking-[0.2em]"
-                >
-                  {link}
-                </a>
-              </li>
-            ))}
-          </ul>
+        {/* Center: Links placed dead-center */}
+        <ul className="hidden xl:flex items-center gap-10 absolute left-1/2 -translate-x-1/2">
+          {links.map((link) => (
+            <li key={link}>
+              <a
+                href={`#${link.toLowerCase()}`}
+                className="text-xs font-bold text-slate-600 dark:text-slate-400 hover:text-sky-400 transition-colors uppercase tracking-[0.2em]"
+              >
+                {link}
+              </a>
+            </li>
+          ))}
+        </ul>
 
+        {/* Right: Actions */}
+        <div className="hidden xl:flex items-center gap-6">
           <ThemeToggle />
 
           <a
@@ -46,6 +49,7 @@ export const Navbar = () => {
           </a>
         </div>
 
+        {/* Mobile Controls */}
         <div className="xl:hidden flex items-center gap-4">
           <ThemeToggle />
           <button
@@ -58,9 +62,7 @@ export const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile menu: normal document flow, no absolute positioning needed
-          since the nav itself is fixed — this keeps the dropdown simple
-          and immune to overflow/clipping issues at any width. */}
+      {/* Mobile menu */}
       {menuOpen && (
         <div className="w-full bg-white dark:bg-[#030712] border-t border-black/5 dark:border-white/5 p-8 flex flex-col gap-8 xl:hidden shadow-2xl max-h-[calc(100dvh-5rem)] overflow-y-auto">
           {links.map((link) => (
@@ -81,7 +83,7 @@ export const Navbar = () => {
             className="text-sm font-black uppercase tracking-widest text-sky-400 border-l-2 border-sky-500 pl-4 py-2 bg-sky-500/5"
             onClick={() => setMenuOpen(false)}
           >
-            Resume_Access
+            Download CV
           </a>
         </div>
       )}

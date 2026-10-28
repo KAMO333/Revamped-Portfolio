@@ -9,9 +9,9 @@ export const ThemeToggle = () => {
     <button
       onClick={toggleTheme}
       aria-label="Toggle theme"
-      className="p-2.5 border border-black/10 dark:border-white/10 hover:border-sky-500/50 transition-colors text-slate-600 dark:text-slate-400 hover:text-sky-500 dark:hover:text-sky-400"
+      className="p-1.5 text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors"
     >
-      {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
+      {theme === "dark" ? <Sun size={17} /> : <Moon size={17} />}
     </button>
   );
 };
