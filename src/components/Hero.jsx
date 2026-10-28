@@ -35,7 +35,8 @@ export const Hero = () => {
             </span>
           </h1>
 
-          <p className="mt-6 mb-8 text-slate-600 dark:text-slate-300 text-sm md:text-base leading-relaxed font-light max-w-lg text-left text-pretty">
+          {/* Bio text centered on mobile, left-aligned on desktop */}
+          <p className="mt-6 mb-8 text-slate-600 dark:text-slate-300 text-sm md:text-base leading-relaxed font-light max-w-lg text-center md:text-left mx-auto md:mx-0 text-pretty">
             <strong className="font-semibold text-slate-900 dark:text-white">
               Full-stack developer{" "}
             </strong>
@@ -58,7 +59,7 @@ export const Hero = () => {
 
           {/* Clean Responsive Actions Container */}
           <div className="flex flex-col sm:flex-row items-center gap-3 w-full sm:w-auto">
-            {/* Action Buttons: Stacked and matched on mobile, inline on desktop */}
+            {/* Action Buttons: Stacked on mobile, inline on desktop */}
             <div className="flex flex-col sm:flex-row items-center gap-3 w-full sm:w-auto">
               <a
                 href="#projects"
