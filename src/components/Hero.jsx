@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowDown, Terminal, Cpu, Layout, Check, Copy } from "lucide-react";
+import { ArrowDown, Check, Copy } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const Hero = () => {
@@ -7,11 +7,11 @@ export const Hero = () => {
 
   const handleCopyEmail = async () => {
     try {
-      await navigator.clipboard.writeText("kamosworkemail@gmail.com");
+      await navigator.clipboard.writeText("kamogelommopane.swe@gmail.com");
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch {
-      window.location.href = "mailto:kamosworkemail@gmail.com";
+      window.location.href = "mailto:kamogelommopane.swe@gmail.com";
     }
   };
 
@@ -35,7 +35,6 @@ export const Hero = () => {
             </span>
           </h1>
 
-          {/* Bio text centered on mobile, left-aligned on desktop */}
           <p className="mt-6 mb-8 text-slate-600 dark:text-slate-300 text-sm md:text-base leading-relaxed font-light max-w-lg text-center md:text-left mx-auto md:mx-0 text-pretty">
             <strong className="font-semibold text-slate-900 dark:text-white">
               Full-stack developer{" "}
@@ -57,40 +56,29 @@ export const Hero = () => {
             containerization.
           </p>
 
-          {/* Clean Responsive Actions Container */}
+          {/* Action Row */}
           <div className="flex flex-col sm:flex-row items-center gap-3 w-full sm:w-auto">
-            {/* Action Buttons: Stacked on mobile, inline on desktop */}
-            <div className="flex flex-col sm:flex-row items-center gap-3 w-full sm:w-auto">
-              <a
-                href="#projects"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-sky-500 text-black font-black text-xs uppercase tracking-widest border border-sky-400 hover:bg-white hover:text-black hover:border-white transition-all duration-300 shadow-[0_0_20px_rgba(14,165,233,0.2)] active:scale-95"
-              >
-                View projects
-                <Layout size={13} className="opacity-80" />
-              </a>
+            <button
+              onClick={handleCopyEmail}
+              aria-label="Copy email address"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-slate-50 dark:bg-white/5 text-slate-700 dark:text-slate-300 font-mono text-xs uppercase tracking-wider border border-black/10 dark:border-white/10 hover:border-sky-500/50 hover:text-sky-500 transition-all duration-300 active:scale-95"
+            >
+              {copied ? (
+                <>
+                  <Check size={13} className="text-green-500" />
+                  <span className="text-green-600 dark:text-green-400 font-bold">
+                    Copied
+                  </span>
+                </>
+              ) : (
+                <>
+                  <Copy size={13} className="opacity-60" />
+                  <span>Copy email</span>
+                </>
+              )}
+            </button>
 
-              <button
-                onClick={handleCopyEmail}
-                aria-label="Copy email address"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-slate-50 dark:bg-white/5 text-slate-700 dark:text-slate-300 font-mono text-xs uppercase tracking-wider border border-black/10 dark:border-white/10 hover:border-sky-500/50 hover:text-sky-500 transition-all duration-300 active:scale-95"
-              >
-                {copied ? (
-                  <>
-                    <Check size={13} className="text-green-500" />
-                    <span className="text-green-600 dark:text-green-400 font-bold">
-                      Copied
-                    </span>
-                  </>
-                ) : (
-                  <>
-                    <Copy size={13} className="opacity-60" />
-                    <span>Copy email</span>
-                  </>
-                )}
-              </button>
-            </div>
-
-            {/* Social Icons: Centered on mobile, aligned on desktop */}
+            {/* Social Icons */}
             <div className="flex items-center justify-center gap-3 pt-1 sm:pt-0 sm:pl-2">
               <a
                 href="https://github.com/KAMO333"
@@ -126,14 +114,12 @@ export const Hero = () => {
 
           <div className="w-full grid grid-cols-2 divide-x divide-black/10 dark:divide-white/10 border-x border-b border-black/10 dark:border-white/10 py-2.5 bg-slate-50/50 dark:bg-white/[0.02]">
             <div className="flex flex-col items-center text-center px-2">
-              <div className="flex items-center gap-1.5 text-sky-500 dark:text-sky-400"></div>
               <p className="text-slate-900 dark:text-white font-bold text-[10px] uppercase tracking-tight mt-0.5">
                 Open to work
               </p>
             </div>
 
             <div className="flex flex-col items-center text-center px-2">
-              <div className="flex items-center gap-1.5 text-indigo-500 dark:text-indigo-400"></div>
               <p className="text-slate-900 dark:text-white font-bold text-[10px] uppercase tracking-tight mt-0.5">
                 Johannesburg, SA
               </p>
@@ -142,10 +128,11 @@ export const Hero = () => {
         </div>
       </div>
 
+      {/* Down arrow now scrolls to the immediate next section (#projects) */}
       <div className="absolute bottom-5 left-1/2 -translate-x-1/2 text-slate-400 hover:text-sky-500 dark:hover:text-sky-400 transition-colors hidden lg:block">
         <a
-          href="#about"
-          aria-label="Scroll to About section"
+          href="#projects"
+          aria-label="Scroll to Projects section"
           className="p-1 inline-block animate-bounce"
         >
           <ArrowDown size={18} />

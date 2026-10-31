@@ -2,7 +2,7 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center py-12 md:py-20 bg-white dark:bg-[#030712] px-6 lg:px-24"
+      className="py-12 md:py-16 bg-white dark:bg-[#030712] px-6 lg:px-24"
     >
       <div className="w-full max-w-6xl mx-auto">
         {/* Section Header */}
@@ -19,36 +19,36 @@ export const About = () => {
         <div className="space-y-6 max-w-3xl mx-auto text-left">
           <p className="text-slate-600 dark:text-slate-300 text-sm md:text-base leading-relaxed font-light text-pretty">
             I’m a Full Stack Developer specialising in React, Node.js, and
-            TypeScript. I take full ownership of the end-to-end pipeline, from
-            architecting secure RESTful APIs and managing PostgreSQL databases,
-            to containerising with Docker.
+            TypeScript, with core expertise in Next.js, Jest and Vitest, CI/CD
+            pipelines, and Microsoft Azure. I take full ownership of the
+            end-to-end pipeline, from architecting secure RESTful APIs with
+            Express.js and managing PostgreSQL databases, to containerising with
+            Docker.
           </p>
 
           <p className="text-slate-600 dark:text-slate-300 text-sm md:text-base leading-relaxed font-light text-pretty">
-            On the backend, I build robust services with Express.js, ensuring
-            reliable data flow using Supabase and Prisma ORM, alongside NoSQL
-            solutions with MongoDB and Mongoose, and optimize performance with
-            Redis caching.
+            On the backend, I ensure reliable data flow using Supabase and
+            Prisma ORM, alongside NoSQL solutions with MongoDB and Mongoose, and
+            optimize performance with Redis caching.
           </p>
 
           <p className="text-slate-600 dark:text-slate-300 text-sm md:text-base leading-relaxed font-light text-pretty">
             On the client side, I craft responsive, modern frontends that
-            prioritize a seamless user experience. Using Next.js, Redux,
-            JavaScript, and Tailwind CSS, I build clean, component-driven
-            interfaces that are intuitive and fast.
+            prioritize a seamless user experience. Using Redux, JavaScript, and
+            Tailwind CSS, I build clean, component-driven interfaces that are
+            intuitive and fast.
           </p>
 
           <p className="text-slate-600 dark:text-slate-300 text-sm md:text-base leading-relaxed font-light text-pretty">
             I believe in shipping stable code with absolute confidence. To
-            maintain high engineering standards, I test rigorously with Jest and
-            Vitest, and automate delivery through seamless CI/CD pipelines.
+            maintain high engineering standards, I enforce rigorous testing
+            protocols and automate delivery to guarantee seamless deployments.
           </p>
 
           <p className="text-slate-600 dark:text-slate-300 text-sm md:text-base leading-relaxed font-light text-pretty">
-            My current areas of interest include cloud architecture, with a
-            focus on Microsoft Azure. I have spent the last 2 years building and
-            shipping functional web software and internal tools that solve real
-            business problems for tech start-ups.
+            Currently expanding my cloud architecture capabilities, I have spent
+            the last 2 years building and shipping functional web software and
+            internal tools that solve real business problems for tech start-ups.
           </p>
         </div>
       </div>
